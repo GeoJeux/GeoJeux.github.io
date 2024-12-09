@@ -47,7 +47,6 @@ body{
   padding: 10px;
   border: solid, 5px, rgb(24, 114, 139);
   border-radius: 5px;
-  position:relative;
 }
 .image{
   height: 250px;

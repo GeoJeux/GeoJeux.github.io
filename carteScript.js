@@ -93,11 +93,6 @@ function genere() {
            pays = Math.floor(Math.random() * tblPays.length); 
         }
         break;
-      default:
-        while (pays < tblPays.length){
-           pays = Math.floor(Math.random() * tblPays.length); 
-        }
-        break;
 
     }
   }

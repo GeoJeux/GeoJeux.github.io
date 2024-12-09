@@ -76,26 +76,26 @@ function genere() {
            pays = Math.floor(Math.random() * tblPays.length); 
         };
         break;
+      }
+    } else {
+      switch (niveau){
+        case 1:
+          while (pays > 16){
+             pays = Math.floor(Math.random() * tblPays.length); 
+          };
+          break;
+        case 2:
+          while ((pays > 32)||(pays < 17)){
+             pays = Math.floor(Math.random() * tblPays.length); 
+          };
+          break;
+        case 3:
+          while (pays < 33){
+             pays = Math.floor(Math.random() * tblPays.length); 
+          }
+          break;
+      }
     }
-  } else {
-    switch (niveau){
-      case 1:
-        while (pays > 16){
-           pays = Math.floor(Math.random() * tblPays.length); 
-        };
-        break;
-      case 2:
-        while ((pays > 32)||(pays < 17)){
-           pays = Math.floor(Math.random() * tblPays.length); 
-        };
-        break;
-      case 3:
-        while (pays < 33){
-           pays = Math.floor(Math.random() * tblPays.length); 
-        }
-        break;
-    }
-  }
 
  nbIndice = 0;
   var carte = document.querySelector(".carte");

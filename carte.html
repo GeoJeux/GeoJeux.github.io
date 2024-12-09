@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cartes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+  <script src="script.js"></script>
+
+  <div class="title">
+    <h1>Drapeau</h1>
+  </div>
+  <div class="emptySpace"></div>
+  
+  <div id="jeux">
+    <div class="emptySpace"></div>
+    <h2 style="color:white">Instruction</h2>
+    <p style="color:white">- Blah blah blah</p>
+    <div class="emptySpace"></div>
+    
+    <p style="color:white">Selectionne un style de jeux:</p>
+    <div class="buttonContainer">
+      <div class="buttonSelect" id="drapeau">
+        <input type="button" class="buttonMargin" value="Drapeau" onclick="drapeau()">
+      </div>
+      <div class="buttonSelect" id="silhouette">
+        <input type="button" class="buttonMargin" value="Silhouette" onclick="shapes()">
+      </div>
+    </div>
+    
+    <p style="color:white"> Selectionne un continent: </p>
+    
+    <div class="buttonContainer">
+      
+      <div class="buttonSelect" id="nord">
+        <input class="buttonMargin" type= "button" value="Amerique du Nord" onclick="nord(), activeN()">  
+      </div>
+      
+      <div class="buttonSelect" id="sud">
+        <input class="buttonMargin" type= "button" value="Amerique du Sud" onclick="sud(), activeS()">
+      </div>
+      
+      <div class="buttonSelect" id="europe">
+        <input class="buttonMargin" type= "button" value="Europe" onclick="europe(), activeE()">
+      </div>
+      
+      <div class="buttonSelect"id="asie">
+        <input class="buttonMargin" type= "button" value="Asie" onclick="asie(), activeAS()">
+      </div>
+      
+      <div class="buttonSelect" id="afrique">
+        <input class="buttonMargin" type= "button" value="Afrique" onclick="afrique(), activeAF()">
+      </div>
+      
+      <div class="buttonSelect" id="oceanie">
+        <input class="buttonMargin" type= "button" value="Océanie" onclick="oceanie(), activeO()">
+      </div>
+    </div>
+    
+    <p style="color:white">Selectionne une dificulté:</p>
+    <div id="buttonContainer2">
+
+      <div class="buttonSelect" id="facile">
+        <input class="buttonMargin" type= "button" onclick="facile(), activeF()" value="Facile"> 
+      </div>
+
+      <div class="buttonSelect" id="moyen">
+        <input class="buttonMargin" type= "button" onclick="moyen(), activeM()" value="Moyen">
+      </div>
+
+      <div class="buttonSelect" id="difficile">
+        <input class="buttonMargin" type= "button" onclick="difficile(), activeD()" value="Dificile">
+      </div>
+    </div><br><br>
+      
+    <input type="button" value="Jouer" onclick="jouer()">
+    <div class="emptySpace"></div>
+  </div>
+  <div class="emptySpace"></div>
+  </center>
+</body>
+
+</html>

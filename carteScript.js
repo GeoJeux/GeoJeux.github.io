@@ -76,12 +76,6 @@ function genere() {
            pays = Math.floor(Math.random() * tblPays.length); 
         };
         break;
-      default:
-        while (tblPays[pays][1] != continent){
-           pays = Math.floor(Math.random() * tblPays.length); 
-        };
-        break;
-    }
   } else {
     switch (niveau){
       case 1:
@@ -208,42 +202,28 @@ function popup() {
 }
 
 function facile(){
-    niveau = 1;
+  niveau = 1;
+  document.getElementById("facile").style.backgroundColor = "rgb(24, 114, 139)";
+  document.getElementById("moyen").style.backgroundColor = "transparent";
+  document.getElementById("difficile").style.backgroundColor = "transparent";
 }
 
 function moyen(){
-    niveau = 2;
+  niveau = 2;
+  document.getElementById("facile").style.backgroundColor = "transparent";
+  document.getElementById("moyen").style.backgroundColor = "rgb(24, 114, 139)";
+  document.getElementById("difficile").style.backgroundColor = "transparent";
 }
 
 function difficile(){
-    niveau = 3;
+  niveau = 3;
+  document.getElementById("facile").style.backgroundColor = "transparent";
+  document.getElementById("moyen").style.backgroundColor = "transparent";
+  document.getElementById("difficile").style.backgroundColor = "rgb(24, 114, 139)";
 }
 
 function nord(){
   continent = "nord";
-}
-
-function sud(){
-  continent = "sud";
-}
-
-function afrique(){
-  continent = "afrique";
-}
-
-function europe(){
-  continent = "europe";
-}
-
-function asie(){
-  continent = "asie";
-}
-
-function oceanie(){
-  continent = "oceanie";
-}
-
-function activeN(){
   document.getElementById("nord").style.backgroundColor = "rgb(24, 114, 139)";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -252,7 +232,8 @@ function activeN(){
   document.getElementById("oceanie").style.backgroundColor = "transparent";
 }
 
-function activeS(){
+function sud(){
+  continent = "sud";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "rgb(24, 114, 139)";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -261,25 +242,8 @@ function activeS(){
   document.getElementById("oceanie").style.backgroundColor = "transparent";
 }
 
-function activeE(){
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("asie").style.backgroundColor = "transparent";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
-}
-
-function activeAS(){
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "transparent";
-  document.getElementById("asie").style.backgroundColor = " rgb(24, 114, 139)";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
-}
-
-function activeAF(){
+function afrique(){
+  continent = "afrique";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -288,7 +252,28 @@ function activeAF(){
   document.getElementById("oceanie").style.backgroundColor = "transparent";
 }
 
-function activeO(){
+function europe(){
+  continent = "europe";
+  document.getElementById("nord").style.backgroundColor = "transparent";
+  document.getElementById("sud").style.backgroundColor = "transparent";
+  document.getElementById("europe").style.backgroundColor = "rgb(24, 114, 139)";
+  document.getElementById("asie").style.backgroundColor = "transparent";
+  document.getElementById("afrique").style.backgroundColor = "transparent";
+  document.getElementById("oceanie").style.backgroundColor = "transparent";
+}
+
+function asie(){
+  continent = "asie";
+  document.getElementById("nord").style.backgroundColor = "transparent";
+  document.getElementById("sud").style.backgroundColor = "transparent";
+  document.getElementById("europe").style.backgroundColor = "transparent";
+  document.getElementById("asie").style.backgroundColor = " rgb(24, 114, 139)";
+  document.getElementById("afrique").style.backgroundColor = "transparent";
+  document.getElementById("oceanie").style.backgroundColor = "transparent";
+}
+
+function oceanie(){
+  continent = "oceanie";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -297,23 +282,6 @@ function activeO(){
   document.getElementById("oceanie").style.backgroundColor = "rgb(24, 114, 139)";
 }
 
-function activeF(){
-  document.getElementById("facile").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("moyen").style.backgroundColor = "transparent";
-  document.getElementById("difficile").style.backgroundColor = "transparent";
-}
-
-function activeM(){
-  document.getElementById("facile").style.backgroundColor = "transparent";
-  document.getElementById("moyen").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("difficile").style.backgroundColor = "transparent";
-}
-
-function activeD(){
-  document.getElementById("facile").style.backgroundColor = "transparent";
-  document.getElementById("moyen").style.backgroundColor = "transparent";
-  document.getElementById("difficile").style.backgroundColor = "rgb(24, 114, 139)";
-}
 
 function shapes(){
   typeJeux = 3;

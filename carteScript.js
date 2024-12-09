@@ -76,7 +76,6 @@ function genere() {
            pays = Math.floor(Math.random() * tblPays.length); 
         };
         break;
-      }
     } else {
       switch (niveau){
         case 1:

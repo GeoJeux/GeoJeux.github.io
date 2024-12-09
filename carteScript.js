@@ -60,18 +60,18 @@ function genere() {
   pays = Math.floor(Math.random() * tblPays.length);
   
   if(continent != null){
-    switch (true){
-      case (niveau == 1):
+    switch (niveau){
+      case 1:
         while ((pays > 16)||(tblPays[pays][1] != continent)){
            pays = Math.floor(Math.random() * tblPays.length); 
         };
         break;
-      case (niveau == 2):
+      case 2:
         while ((pays > 32)||(pays < 17)&&(tblPays[pays][1] != continent)){
            pays = Math.floor(Math.random() * tblPays.length); 
         };
         break;
-      case (niveau == 3):
+      case 3:
         while ((pays < 33)||(tblPays[pays][1] != continent)){
            pays = Math.floor(Math.random() * tblPays.length); 
         };

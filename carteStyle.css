@@ -1,0 +1,167 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align:center;
+}
+
+.carte{
+  width: 60%;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  text-align: center;
+  background-color: white;
+  overflow:hidden;
+  padding: 10px;
+  border: solid, 5px, rgb(24, 114, 139);
+  border-radius: 5px;
+}
+.image{
+  height: 250px;
+}
+
+.emptySpace{
+  height: 100px;
+  width: 100%;
+}
+
+.title{
+  width: 40%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  text-align: center;
+  color:white;
+  background-color:rgb(32 182 224);
+  overflow:hidden; 
+  padding: 10px; 
+  border: solid, 3px,  rgb(24, 114, 139);  
+  border-radius: 20px;
+}
+
+#jeux{
+  background-color:rgb(32 182 224);
+  width: 80%;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid, 3px,  rgb(24, 114, 139); 
+}
+
+#vies{
+  text-align: right;
+  width:300px;
+  height:20px;
+  overflow: hidden;
+  float: right;
+  padding: 70px;
+}
+
+#indice{
+  text-align: center;
+  position: absolute;
+  left: 175px;
+  margin: 10px;
+}
+
+#gameOver{
+  z-index: 1;
+  position: absolute ;
+  width: 74%;
+  height: 74%;
+  top:70%;
+  bottom:70%;
+  left:13%;
+  right:13%;
+  text-align: center;
+  border: solid, 5px, black;
+  background-color: rgb(24, 114, 139);
+  color: white;
+}
+.buttonContainer {
+  display: flex; 
+  justify-content: center; 
+  margin-inline: auto; 
+  padding: 10px;
+  width: 90%;
+  border: solid, 3px,  rgb(24, 114, 139); 
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#buttonContainer2 {
+  display: flex; 
+  justify-content: center; 
+  margin-inline: auto; 
+  padding: 10px;
+  width: 50%;
+  border: solid, 3px,  rgb(24, 114, 139); 
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.buttonMargin{
+  margin-inline: 25px;
+}
+
+.coeur{
+  height:20px;
+}
+
+#score{
+  text-align: center;
+  width:200px;
+  height:20px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  left: 500px;
+  top: 49%;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 200%;
+  left: 0px;
+  margin-left:-50px;
+}
+
+.popup .show {
+  visibility: visible;
+}
+
+.buttonSelect{
+  padding-top: 14px;
+  height:35px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#stop {
+  text-align: center;
+  position: absolute;
+  left: 175px;
+  margin: 10px;
+}

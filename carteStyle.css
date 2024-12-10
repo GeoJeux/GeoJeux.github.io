@@ -95,6 +95,7 @@ body{
   position: fixed;
   left: 175px;
   margin: 10px;
+  bottom: 150px;
 }
 
 #gameOver{

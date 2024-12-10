@@ -177,7 +177,7 @@ function indice(){
   }else if(nbIndice == 1){
     indice.innerHTML = tblPays[pays][5];
   } else if (nbIndice == 2){
-    indice.innerHTML = tblPays[pays][6];
+    indice.innerHTML = tblPays[pays][6] + "km²";
   } else if (nbIndice == 3){
     indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"
   }

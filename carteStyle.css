@@ -92,7 +92,7 @@ body{
 
 #indice{
   text-align: center;
-  position: fixed;
+  position: absolute;
   left: 175px;
   margin: 10px;
   bottom: 150px;
@@ -185,5 +185,7 @@ body{
 #stop {
   text-align: center;
   float: left;
-  position:fixed;
+  position:absolute;
+  left:175px;
+  top: 350px;
 }

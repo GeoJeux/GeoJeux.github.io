@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align:center;
+}
+
+.emptySpace{
+  height: 100px;
+  width: 100%;
+}
+
+.title{
+  width: 40%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  text-align: center;
+  color:white;
+  background-color:rgb(32 182 224);
+  overflow:hidden;
+  padding: 10px;
+  border: solid, 3px,  rgb(24, 114, 139);  
+  border-radius: 20px;
+}
+
+#jeux{
+  background-color:rgb(32 182 224);
+  width: 80%;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid, 3px,  rgb(24, 114, 139);
+}
+
+.grid-container {
+  width: 100%;
+  background-color: rgb(32,182,224);
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 20px;
+}
+button[type='submit'] {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit; 
+}
+button[type='submit']:hover {
+  transform: scale(1.2);
+}

@@ -102,10 +102,11 @@ body{
   position: absolute ;
   width: 74%;
   height: 74%;
-  top:20%;
-  bottom:20%;
+  top:40%;
+  bottom:40%;
   left:13%;
   right:13%;
+  font-size:3em;
   text-align: center;
   border: solid, 5px, black;
   background-color: rgb(24, 114, 139);

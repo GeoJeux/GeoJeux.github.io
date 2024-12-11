@@ -42,15 +42,14 @@ body{
 
 .grid-container {
   width: 95%;
-  background-color: rgb(32,182,224);
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
+  height: 750px;
+  border-radius: 30px;
+  border: solid, 1px. white;
 }
 
-.grid-item {
-  background-color: white;
-  padding: 20px;
-}
 button[type='submit'] {
   border: none;
   cursor: pointer;

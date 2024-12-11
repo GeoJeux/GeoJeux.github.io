@@ -54,7 +54,7 @@ button[type='submit'] {
   border: none;
   cursor: pointer;
   appearance: none;
-  background-color: inherit; 
+  background-color: transparent; 
 }
 button[type='submit']:hover {
   transform: scale(1.2);

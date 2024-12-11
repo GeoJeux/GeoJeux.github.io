@@ -103,8 +103,8 @@ function genere() {
 }
   
 function jouer(){
-  var message = "<div id='vies'></div><div id='score'></div>\
-    <div id='stop'><input type='button' value='Arrêter' onclick='arrete()'></div>\
+  var message = "<div id='topLine'><div id='vies'></div><div id='score'></div>\
+    <div id='stop'><input type='button' value='Arrêter' onclick='arrete()'></div></div>\
     <div class='carte'></div>\
     <div class='emptySpace'></div>\
     <div>\
@@ -163,7 +163,7 @@ function lives(){
   } else {
     popUp = document.createElement("div");
     popUp.id = 'gameOver';
-    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de <br><h1>" + score + "<h1><br><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='url à score page'><input type='button' value='Quitter'<a>";
+    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de <br><h1>" + score + "<h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='url à score page'><input type='button' value='Quitter'<a>";
     document.body.appendChild(popUp);
   }
   vieAffiche.innerHTML = "Vies: " + vieMessage;
@@ -177,7 +177,7 @@ function indice(){
   }else if(nbIndice == 1){
     indice.innerHTML = tblPays[pays][5];
   } else if (nbIndice == 2){
-    indice.innerHTML = tblPays[pays][6] + "km²";
+    indice.innerHTML = tblPays[pays][6];
   } else if (nbIndice == 3){
     indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"
   }
@@ -194,27 +194,6 @@ function arrete(){
 function popup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
-}
-
-function facile(){
-  niveau = 1;
-  document.getElementById("facile").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("moyen").style.backgroundColor = "transparent";
-  document.getElementById("difficile").style.backgroundColor = "transparent";
-}
-
-function moyen(){
-  niveau = 2;
-  document.getElementById("facile").style.backgroundColor = "transparent";
-  document.getElementById("moyen").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("difficile").style.backgroundColor = "transparent";
-}
-
-function difficile(){
-  niveau = 3;
-  document.getElementById("facile").style.backgroundColor = "transparent";
-  document.getElementById("moyen").style.backgroundColor = "transparent";
-  document.getElementById("difficile").style.backgroundColor = "rgb(24, 114, 139)";
 }
 
 function nord(){

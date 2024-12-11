@@ -1,10 +1,20 @@
-var tblCountrys = ["BRAZIL", "ÉTATS-UNIS", "MEXIQUE"]
+var tblCountrys
+var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","SALVADOR","NICARAGUA","COSTA RICA","PANAMA","CUBA","JAMAÏQUE","HAÏTI","RÉPUBLIQUE DOMINICAINE",
+    "PORTO RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINT-MARTIN","SAINTE-LUCIE","GRENADINES SAINT-VINCENT-ET-LES","ANTIGUA-ET-BARBUDA","SAINT-BARTHÉLEMY",
+    "SAINT-ÉLOI","MONTSERRAT","SAINT-PIERRE-ET-MIQUELON","DOMINIQUE","ANGUILLA"];
+var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRESIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];
+
+
 var canada = "<button type = 'submit' id='btnSubmit' value='CANADA' onclick = 'setAnswer()'><img src = 'images/Canada.png'></button>"
 var lives = 3;
 var paysNom;
 var answer
 var score = 0;
 function affichePaysNom() {
+  switch (continent) {
+	  case "ameriqueNord":
+	  case "ameriqueSud":
+  }
   paysNom = tblCountrys[Math.floor(Math.random()*tblCountrys.length)]
 }
 

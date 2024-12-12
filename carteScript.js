@@ -213,10 +213,42 @@ function genere() {
   pays = Math.floor(Math.random() * tblPays.length);
   
   if(continent != null){
-    while (tblPays[pays][2] != continent){
+    switch (niveau){
+      case 1:
+        while ((pays > 16)||(tblPays[pays][1] != continent)){
            pays = Math.floor(Math.random() * tblPays.length); 
         };
-  }
+        break;
+      case 2:
+        while ((pays > 32)||(pays < 17)&&(tblPays[pays][1] != continent)){
+           pays = Math.floor(Math.random() * tblPays.length); 
+        };
+        break;
+      case 3:
+        while ((pays < 33)||(tblPays[pays][1] != continent)){
+           pays = Math.floor(Math.random() * tblPays.length); 
+        };
+        break;
+      }
+    } else {
+      switch (niveau){
+        case 1:
+          while (pays > 16){
+             pays = Math.floor(Math.random() * tblPays.length); 
+          };
+          break;
+        case 2:
+          while ((pays > 32)||(pays < 17)){
+             pays = Math.floor(Math.random() * tblPays.length); 
+          };
+          break;
+        case 3:
+          while (pays < 33){
+             pays = Math.floor(Math.random() * tblPays.length); 
+          }
+          break;
+      }
+    }
 
  nbIndice = 0;
   var carte = document.querySelector(".carte");
@@ -250,7 +282,7 @@ function jouer(){
 
 function devine(){
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" ");
-  if (tblPays[pays][0].includes(essaie)){
+  if (essaie == tblPays[pays][0]){
     message = "Bravo, vous avez réussit à deviner le bon pays";
     score += 500;
     
@@ -284,7 +316,7 @@ function lives(){
   } else {
     popUp = document.createElement("div");
     popUp.id = 'gameOver';
-    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de <br><h1>" + score + "<h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>";
+    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>";
     document.body.appendChild(popUp);
   }
   vieAffiche.innerHTML = "Vies: " + vieMessage;

@@ -136,7 +136,7 @@ pays = Math.floor(Math.random() * tblPays.length);
     } else {
       popUp = document.createElement("div");
       popUp.id = 'gameOver';
-      popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de <br><h1>" + score + "<h1><br><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='url à score page'><input type='button' value='Quitter'<a>";
+      popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de <br><h1>" + score + "<h1><br><input type='button' value='Rejouer' onclick='location.reload();'> </a> <a href='GeoJeux/index.html'><input type='button' value='Quitter'<a>";
       document.body.appendChild(popUp);
     }
     vieAffiche.innerHTML = "Vies: " + vieMessage;

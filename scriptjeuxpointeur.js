@@ -3,35 +3,35 @@ var acrteAfficher
 var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","SALVADOR","NICARAGUA","COSTA RICA","PANAMA","CUBA","JAMAÏQUE","HAÏTI","RÉPUBLIQUE DOMINICAINE",
     "PORTO RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINT-MARTIN","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES","ANTIGUA-ET-BARBUDA","SAINT-BARTHÉLEMY",
     "SAINT-ÉLOI","MONTSERRAT","DOMINIQUE","ANGUILLA"];
-var carteAmeriqueNord = ["<button type = 'submit' id='btnSubmit' value='ÉTATS-UNIS' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			"<button type = 'submit' id='btnSubmit' value='CANADA' onclick = 'setAnswer()'><img src = 'images/Canada.png'></button>"
-			"<button type = 'submit' id='btnSubmit' value='MEXIQUE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='GUATEMALA' onclick = 'setAnswer()'><img src = 'images/Guatemala.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='BELIZE' onclick = 'setAnswer()'><img src = 'images/Belize.png'></button>"
- 			 "<button type = 'submit' id='btnSubmit' value='HONDURAS' onclick = 'setAnswer()'><img src = 'images/Honduras.png'></button>"
- 			 "<button type = 'submit' id='btnSubmit' value='SALVADOR' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
- 			 "<button type = 'submit' id='btnSubmit' value='NICARAGUA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='COSTA RICA' onclick = 'setAnswer()'><img src = 'images/Costa Rica.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='PANAMA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='CUBA' onclick = 'setAnswer()'><img src = 'images/Cuba.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='JAMAÏQUE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-		 	 "<button type = 'submit' id='btnSubmit' value='HAÏTI' onclick = 'setAnswer()'><img src = 'images/Haiti.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='RÉPUBLIQUE DOMINICAINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='PORTO RICO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='BARBADE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='SAINT-MARTIN' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='ANTIGUA-ET-BARBUDA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='SAINT-BARTHÉLEMY' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-		 	 "<button type = 'submit' id='btnSubmit' value='SAINT-ÉLOI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-	 		 "<button type = 'submit' id='btnSubmit' value='MONTSERRAT' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='DOMINIQUE' onclick = 'setAnswer()'><img src = 'images/Dominique.png'></button>"
-			 "<button type = 'submit' id='btnSubmit' value='ANGUILLA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"]
+var carteAmeriqueNord = "<button type = 'submit' id='btnSubmit' value='ÉTATS-UNIS' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='CANADA' onclick = 'setAnswer()'><img src = 'images/Canada.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='MEXIQUE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='GUATEMALA' onclick = 'setAnswer()'><img src = 'images/Guatemala.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='BELIZE' onclick = 'setAnswer()'><img src = 'images/Belize.png'></button>" +
+ 			"<button type = 'submit' id='btnSubmit' value='HONDURAS' onclick = 'setAnswer()'><img src = 'images/Honduras.png'></button>" +
+ 			"<button type = 'submit' id='btnSubmit' value='SALVADOR' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+ 			"<button type = 'submit' id='btnSubmit' value='NICARAGUA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='COSTA RICA' onclick = 'setAnswer()'><img src = 'images/Costa Rica.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='PANAMA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='CUBA' onclick = 'setAnswer()'><img src = 'images/Cuba.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='JAMAÏQUE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+		 	"<button type = 'submit' id='btnSubmit' value='HAÏTI' onclick = 'setAnswer()'><img src = 'images/Haiti.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='RÉPUBLIQUE DOMINICAINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='PORTO RICO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='BARBADE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='SAINT-MARTIN' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='ANTIGUA-ET-BARBUDA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='SAINT-BARTHÉLEMY' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+		 	"<button type = 'submit' id='btnSubmit' value='SAINT-ÉLOI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+	 		"<button type = 'submit' id='btnSubmit' value='MONTSERRAT' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='DOMINIQUE' onclick = 'setAnswer()'><img src = 'images/Dominique.png'></button>" +
+			"<button type = 'submit' id='btnSubmit' value='ANGUILLA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>" +
 
 var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRESIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];
-var carteAmeriqueSud = ["<button type = 'submit' id='btnSubmit' value='ARGENTINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
+var carteAmeriqueSud = "<button type = 'submit' id='btnSubmit' value='ARGENTINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
 		       	"<button type = 'submit' id='btnSubmit' value='BOLIVIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
 			"<button type = 'submit' id='btnSubmit' value='BRESIL' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
 			"<button type = 'submit' id='btnSubmit' value='CHILI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"

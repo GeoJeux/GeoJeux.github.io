@@ -282,16 +282,24 @@ function jouer(){
 
 function devine(){
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" ");
-  if (essaie == tblPays[pays][0]){
-    message = "Bravo, vous avez réussit à deviner le bon pays";
-    score += 500;
-    
-    genere()
-  } else {
-    vies--
-    message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>";
-  }
 
+	if (essaie != " "){
+		if (tblPays.includes(essaie)){
+			if (essaie == tblPays[pays][0]){
+			message = "Bravo, vous avez réussit à deviner le bon pays";
+			score += 500;
+			
+			genere()
+		  } else {
+			vies--
+			message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>";
+		  }
+		} else {
+			message = "<br>On ne connais pas ce pays " + essaie + ".<br>";
+		}
+	} else {
+		message = "<br>Entrée un pays!<br>";
+	}
   
   lives();
   var affiche = document.getElementById("score");
@@ -302,7 +310,6 @@ function devine(){
   textBox.value = "";
   
 }
-
 
 function lives(){
   var vieAffiche = document.getElementById("vies");

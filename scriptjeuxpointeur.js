@@ -87,7 +87,7 @@ function setContinent() {
 
 function affichePaysNom() {
   
-  paysNom = tblCountrys[Math.floor(Math.random()*tblCountrys.length)]
+  paysNom = ameriqueNordNoms[Math.floor(Math.random()*tblCountrys.length)]
 }
 
 

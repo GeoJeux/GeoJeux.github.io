@@ -126,7 +126,7 @@ pays = Math.floor(Math.random() * tblPays.length);
 
   function lives(){
     var vieAffiche = document.getElementById("vies");
-    var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'>";
+    var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'> height:20px;";
     var vieMessage = "";
 
     if (vies > 0){

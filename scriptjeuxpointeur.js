@@ -56,8 +56,10 @@ var lives = 3;
 var paysNom;
 var answer
 var score = 0;
+var continent
 
 function setContinent() {
+	continent = document.getElementById("btnChoixContinent").value;
 	switch (continent) {
 	  case "ameriqueNord":
 		  tblCountries = ameriqueNordNoms;
@@ -86,8 +88,7 @@ function setContinent() {
 }
 
 function affichePaysNom() {
-  
-  paysNom = ameriqueNordNoms[Math.floor(Math.random()*tblCountrys.length)]
+  paysNom = ameriqueNordNoms[Math.floor(Math.random()*ameriqueNordNoms.length)] //switch ameriqueNordNoms to tblCountries
 }
 
 

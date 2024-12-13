@@ -198,8 +198,7 @@ var tblPays = [
   ["YÉMEN", "Sanaa", "Asie", 527968], 
   ["ZAMBIE", "Lusaka", "Afrique", 752612], 
   ["ZIMBABWE", "Harare", "Afrique", 390757]
-];
-
+]
 var continent;
 var niveau = 0;
 var vies = 3
@@ -220,7 +219,7 @@ function genere() {
         };
         break;
       case 2:
-        while ((pays > 32)||(pays < 17)&&(tblPays[pays][1] != continent)){
+        while (tblPays[pays][1] != continent){
            pays = Math.floor(Math.random() * tblPays.length); 
         };
         break;
@@ -284,7 +283,7 @@ function devine(){
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" ");
 
 	if (essaie != " "){
-		if (tblPays.includes(essaie)){
+		if (tblPays[pays][0] == essaie){
 			if (essaie == tblPays[pays][0]){
 			message = "Bravo, vous avez réussit à deviner le bon pays";
 			score += 500;
@@ -311,6 +310,7 @@ function devine(){
   
 }
 
+
 function lives(){
   var vieAffiche = document.getElementById("vies");
   var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'>";
@@ -333,12 +333,10 @@ function indice(){
   var indice = document.getElementById("myPopup");
 
   if (nbIndice == 0){
-    indice.innerHTML = tblPays[pays][4];
+    indice.innerHTML = tblPays[pays][3];
   }else if(nbIndice == 1){
-    indice.innerHTML = tblPays[pays][5];
+    indice.innerHTML = tblPays[pays][1];
   } else if (nbIndice == 2){
-    indice.innerHTML = tblPays[pays][6];
-  } else if (nbIndice == 3){
     indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"
   }
   nbIndice += 0.5

@@ -43,20 +43,20 @@ var carteAmeriqueSud = "<button type = 'submit' id='btnSubmit' value='ARGENTINE'
 			<button type = 'submit' id='btnSubmit' value='SURINAME' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			<button type = 'submit' id='btnSubmit' value='URUGUAY' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			<button type = 'submit' id='btnSubmit' value='VENEZUELA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-var afriqueNoms = [""]
-var carteAfrique [""]
-var europeNoms = [""]
-var carteEurope = [""]
-var asieNoms = [""]
-var carteAsie = [""]
-var oceanieNoms = [""]
-var carteOceanie = [""]
+var afriqueNoms
+var carteAfrique
+var europeNoms
+var carteEurope
+var asieNoms
+var carteAsie
+var oceanieNoms
+var carteOceanie
 
 var lives = 3;
 var paysNom;
-var answer
+var answer;
 var score = 0;
-var continent
+var continent;
 
 function setContinent() {
 	continent = document.getElementById("btnChoixContinent").value;
@@ -116,6 +116,6 @@ function endGame() {
 }
 function jouerPointeur() {
   var affiche = document.getElementById("jeux");
-    affichePaysNom()
-    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'></div>"
+    affichePaysNom();
+    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAmeriqueNord+"</div>"
 }

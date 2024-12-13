@@ -123,7 +123,7 @@ var score = 0;
 var continent;
 
 function setContinent() {
-	continent = document.getElementById("btnChoixContinent").value;
+	continent = event.target.value;
 	switch (continent) {
 	  case "ameriqueNord":
 		  tblCountries = ameriqueNordNoms;
@@ -157,7 +157,7 @@ function affichePaysNom() {
 
 
 function setAnswer() {
-	answer = document.getElementById("btnSubmit").value;
+	answer = event.target.value;
 }
 
 function verifyAnswer() {

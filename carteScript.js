@@ -283,19 +283,15 @@ function devine(){
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" ");
 
 	if (essaie != " "){
-		if (tblPays[pays][0] == essaie){
-			if (essaie == tblPays[pays][0]){
+		if (essaie == tblPays[pays][0]){
 			message = "Bravo, vous avez réussit à deviner le bon pays";
 			score += 500;
 			
 			genere()
-		  } else {
+		 } else {
 			vies--
 			message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>";
-		  }
-		} else {
-			message = "<br>On ne connais pas ce pays " + essaie + ".<br>";
-		}
+		 }
 	} else {
 		message = "<br>Entrée un pays!<br>";
 	}

@@ -89,5 +89,5 @@ button[type='submit']:focus {
 .btnChoixContinent:focus {
 	background-color: rgb(24, 114, 139);
 	border: solid, 10px, rgb(24, 114, 139);
-	border-radius: 15px;
+	border-radius: 30px;
 }

@@ -51,6 +51,9 @@ body{
 #btnjouer:hover {
 	background-color: rgb(24, 114, 139);
 }
+#btnChoixContinentDiv {
+	padding-top: 20px;
+}
 .grid-container {
   width: 95%;
   background-color: white;

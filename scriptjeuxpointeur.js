@@ -117,5 +117,5 @@ function endGame() {
 function jouerPointeur() {
   var affiche = document.getElementById("jeux");
     affichePaysNom()
-    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAmeriqueNord+"</div>"
+    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'></div>"
 }

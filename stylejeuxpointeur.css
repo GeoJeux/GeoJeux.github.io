@@ -1,3 +1,4 @@
+
 html {
   height: 100%;
   width: 100%;
@@ -39,7 +40,17 @@ body{
   margin-right: auto;
   border: solid, 3px,  rgb(24, 114, 139);
 }
-
+#btnjouer {
+	font-size: 20px;
+	color: white;
+	background-color: inherit;
+	border: solid, 2px, white;
+	border-radius: 30px;
+	padding: 10px;
+}
+#btnjouer:hover {
+	background-color: rgb(24, 114, 139);
+}
 .grid-container {
   width: 95%;
   background-color: white;
@@ -58,4 +69,22 @@ button[type='submit'] {
 }
 button[type='submit']:hover {
   transform: scale(1.2);
+}
+button[type='submit']:focus {
+	background-color: rgb(32 182 224);
+}
+.btnChoixContinent {
+	color: white;
+	background-color: inherit;
+	border: solid, 2px, white;
+	border-radius: 15px;
+	padding: 5px;
+}
+.btnChoixContinent:hover {
+	background-color: rgb(24, 114, 139);
+}
+.btnChoixContinent:focus {
+	background-color: rgb(24, 114, 139);
+	border: solid, 10px, rgb(24, 114, 139);
+	border-radius: 15px;
 }

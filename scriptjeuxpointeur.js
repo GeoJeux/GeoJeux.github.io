@@ -1,5 +1,5 @@
 var tblCountries
-var acrteAfficher
+var carteAfficher
 var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","SALVADOR","NICARAGUA","COSTA RICA","PANAMA","CUBA","JAMAÏQUE","HAÏTI","RÉPUBLIQUE DOMINICAINE",
     "PORTO RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINT-MARTIN","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES","ANTIGUA-ET-BARBUDA","SAINT-BARTHÉLEMY",
     "SAINT-ÉLOI","MONTSERRAT","DOMINIQUE","ANGUILLA"];
@@ -43,10 +43,74 @@ var carteAmeriqueSud = "<button type = 'submit' id='btnSubmit' value='ARGENTINE'
 			<button type = 'submit' id='btnSubmit' value='SURINAME' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			<button type = 'submit' id='btnSubmit' value='URUGUAY' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			<button type = 'submit' id='btnSubmit' value='VENEZUELA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
-var afriqueNoms
-var carteAfrique
-var europeNoms
-var carteEurope
+var afriqueNoms = ["AFRIQUE DU SUD", "ALGÉRIE", "ANGOLA", "BÉNIN", "BOTSWANA", "BURKINA FASO", "BURUNDI", "CAMEROUN", "CAP-VERT", 
+		   "COMORES", "CÔTE D'IVOIRE", "DJIBOUTI", "ÉGYPTE", "ÉRYTHRÉE", "ESWATINI", "ÉTHIOPIE", "GABON", "GAMBIE", "GHANA", 
+		   "GUINÉE ÉQUATORIALE", "GUINÉE", "GUINÉE-BISSAU", "KENYA", "LESOTHO", "LIBERIA", "LIBYE", "MADAGASCAR", "MALAWI", 
+		   "MALI", "MAROC", "MAURICE", "MAURITANIE", "MOZAMBIQUE", "NAMIBIE", "NIGER", "NIGÉRIA", "OUGANDA", 
+		   "RÉPUBLIQUE CENTRAFRICAINE", "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO", "RÉPUBLIQUE DU CONGO", "RWANDA", 
+		   "SÃO TOMÉ-ET-PRÍNCIPE", "SÉNÉGAL", "SEYCHELLES", "SIERRA LEONE", "SOMALIE", "SOUDAN", "SOUDAN DU SUD", "TANZANIE", 
+		   "TCHAD", "TOGO", "TUNISIE", "ZAMBIE", "ZIMBABWE"];
+var carteAfrique = "<button type = 'submit' id='btnSubmit' value='AFRIQUE DU SUD' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ALGÉRIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ANGOLA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='BÉNIN' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='BOTSWANA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='BURKINA FASO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='BURUNDI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='CAMEROUN' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='CAP-VERT' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='COMORES' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='CÔTE D'IVOIRE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='DJIBOUTI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ÉGYPTE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ÉRYTHRÉE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ESWATINI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ÉTHIOPIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='GABON' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='GAMBIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='GHANA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='GUINÉE ÉQUATORIALE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='GUINÉE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='GUINÉE-BISSAU' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='KENYA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='LESOTHO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='LIBERIA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='LIBYE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MADAGASCAR' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MALAWI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MALI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MAROC' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MAURICE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MAURITANIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='MOZAMBIQUE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='NAMIBIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='NIGER' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='NIGÉRIA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='OUGANDA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='RÉPUBLIQUE CENTRAFRICAINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='RÉPUBLIQUE DÉMOCRATIQUE DU CONGO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='RÉPUBLIQUE DU CONGO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='RWANDA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SÃO TOMÉ-ET-PRÍNCIPE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SÉNÉGAL' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SEYCHELLES' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SIERRA LEONE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SOMALIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SOUDAN' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='SOUDAN DU SUD' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+	  	    <button type = 'submit' id='btnSubmit' value='TANZANIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='TCHAD' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='TOGO' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='TUNISIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ZAMBIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		    <button type = 'submit' id='btnSubmit' value='ZIMBABWE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"
+
+var europeNoms = ["ALBANIE", "ALLEMAGNE", "ANDORRE", "ARMÉNIE", "AUTRICHE", "AZERBAÏDJAN", "BÉLARUS", "BELGIQUE", "BOSNIE-HERZÉGOVINE", 
+                  "BULGARIE", "CHYPRE", "CROATIE", "DANEMARK", "ESPAGNE", "ESTONIE", "FINLANDE", "FRANCE", "GÉORGIE", "GRÈCE", "HONGRIE",
+                  "IRLANDE", "ISLANDE", "ITALIE", "KOSOVO", "LETTONIE", "LIECHTENSTEIN", "LITUANIE", "LUXEMBOURG", "MACÉDOINE", "MALTE", 
+                  "MOLDAVIE", "MONACO", "MONTÉNÉGRO", "NORVÈGE", "PAYS-BAS", "POLOGNE", "PORTUGAL", "ROUMANIE", "ROYAUME-UNI", "RUSSIE", 
+                  "SAINT-MARIN", "SERBIE", "SLOVAQUIE", "SLOVÉNIE","SUÈDE", "SUISSE", "TCHÉQUI", "TURQUIE", "UKRAINE"]
+var carteEurope 
 var asieNoms
 var carteAsie
 var oceanieNoms
@@ -88,7 +152,7 @@ function setContinent() {
 }
 
 function affichePaysNom() {
-  paysNom = ameriqueNordNoms[Math.floor(Math.random()*ameriqueNordNoms.length)] //switch ameriqueNordNoms to tblCountries
+  paysNom = tblCountries[Math.floor(Math.random()*tblCountries.length)]
 }
 
 
@@ -117,5 +181,5 @@ function endGame() {
 function jouerPointeur() {
   var affiche = document.getElementById("jeux");
     affichePaysNom();
-    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAmeriqueNord+"</div>"
+    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"
 }

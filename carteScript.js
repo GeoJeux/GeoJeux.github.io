@@ -66,7 +66,7 @@ var tblPays = [
   ["GAMBIE", "Banjul", "Afrique", 11295, "<img src='image/Gambia.png'>", "<img src='image/Gambied.png'>"], 
   ["GÉORGIE", "Tbilissi", "Asie", 69700, "<img src='image/Géorgie.png'>", "<img src='image/Géorgied.png'>"], 
   ["GHAINA", "Accra", "Afrique", 238533, "<img src='image/Ghana.png'>", "<img src='image/Ghanad.png'>"], 
-  ["GRECQUE", "Athènes", "Europe", 131957, "<img src='image/Greece.png'>", "<img src='image/Grèced.png'>"], 
+  ["GRÈCE", "Athènes", "Europe", 131957, "<img src='image/Greece.png'>", "<img src='image/Grèced.png'>"], 
   ["GRENADA", "Saint-Georges", "Amérique", 344, "<img src='image/Grenade.png'>", "<img src='image/Grenaded.png'>"], 
   ["GUATEMALA", "Guatemala", "Amérique", 108889, "<img src='image/Guatemala.png'>", "<img src='image/Guatemalad.png'>"], 
   ["GUINÉE", "Conakry", "Afrique", 245857, "<img src='image/Guinée.png'>", "<img src='image/Guinéed.png'>"], 

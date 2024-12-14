@@ -125,7 +125,7 @@ var tblPays = [
   ["OUGANDA", "Kampala", "Afrique", 241038, "<img src='images/Ouganda.png' class='image'>", "<img src='images/Ougandad.png' class='image'>"],
   ["OUZBÉKISTAN", "Tachkent", "Asie", 447400, "<img src='images/Ouzbekistan.png' class='image'>", "<img src='images/Ouzbekistand.png' class='image'>"],
   ["PAKISTAN", "Islamabad", "Asie", 881913, "<img src='images/Pakistan.png' class='image'>", "<img src='images/Pakistand.png' class='image'>"],
-  ["PALAOS", "Ngerulmud", "Océanie", 459, "<img src='images/Palau.png' class='image'>", "<img src='images/Palau.png' class='image'>"],
+  ["PALAOS", "Ngerulmud", "Océanie", 459, "<img src='images/Palau.png' class='image'>", "<img src='images/Palaud.png' class='image'>"],
   ["PANAMA", "Panama", "Nord", 75417, "<img src='images/Panama.png' class='image'>", "<img src='images/Panama.png' class='image'>"],
   ["PAPOUASIE-NOUVELLE-GUINÉE", "Port Moresby", "Océanie", 462840, "<img src='images/Papouasie-Nouvelle-Guinee.png' class='image'>", "<img src='images/Papouasie-Nouvelle-Guineed.png' class='image'>"],
   ["PARAGUAY", "Asunción", "Sud", 406752, "<img src='images/Paraguay.png' class='image'>", "<img src='images/Paraguayd.png' class='image'>"],

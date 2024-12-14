@@ -1,5 +1,4 @@
 var tblPays = [
-[
   ["AFGHANISTAN", "Kaboul", "Asie", 652230, "<img src='images/Afghanistan.png' class='image'>", "<img src='images/drapeau/Afghanistand.png' class='image'>"],
   ["AFRIQUE DU SUD", "Pretoria", "Afrique", 1219090, "<img src='images/AfriqueDuSud.png' class='image'>", "<img src='images/drapeau/AfriqueDuSudd.png' class='image'>"],
   ["ALBANIE", "Tirana", "Europe", 28748, "<img src='images/Albanie.png' class='image'>", "<img src='images/drapeau/Albanied.png' class='image'>"],

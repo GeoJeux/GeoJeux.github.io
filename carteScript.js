@@ -399,13 +399,13 @@ function oceanie(){
 
 
 function shapes(){
-  typeJeux = 3;
+  typeJeux = 4;
   document.getElementById("drapeau").style.backgroundColor = "transparent";
   document.getElementById("silhouette").style.backgroundColor = "rgb(24, 114, 139)";
 }
 
 function drapeau(){
-  typeJeux = 2;
+  typeJeux = 5;
   document.getElementById("drapeau").style.backgroundColor = "rgb(24, 114, 139)";
   document.getElementById("silhouette").style.backgroundColor = "transparent";
 }

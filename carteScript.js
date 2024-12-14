@@ -282,9 +282,9 @@ function indice(){
   var indice = document.getElementById("myPopup");
 
   if (nbIndice == 0){
-    indice.innerHTML = tblPays[pays][3];
+    indice.innerHTML = "La superficie du pays est de " + tblPays[pays][3] + " km²";
   }else if(nbIndice == 1){
-    indice.innerHTML = tblPays[pays][1];
+    indice.innerHTML = "La capitale du pays c'est " + tblPays[pays][1];
   } else if (nbIndice == 2){
     indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"
   }

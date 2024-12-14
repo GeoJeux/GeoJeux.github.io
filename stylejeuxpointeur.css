@@ -68,6 +68,7 @@ button[type='submit'] {
   border: none;
   cursor: pointer;
   appearance: none;
+  background-size: cover;
   background-color: transparent; 
 }
 button[type='submit']:hover {
@@ -90,4 +91,22 @@ button[type='submit']:focus {
 	background-color: rgb(24, 114, 139);
 	border: solid, 10px, rgb(24, 114, 139);
 	border-radius: 60px;
+}
+button[value="ÉTATS-UNIS"] { 
+	top: 200px; 
+	left: 120px; 
+	width: 200px; 
+	height: 150px; 
+}
+button[value="CANADA"] { 
+	top: 50px; 
+	left: 100px; 
+	width: 150px; 
+	height: 150px; 
+}
+button[value="MEXIQUE"] { 
+	top: 350px; 
+	left: 150px; 
+	width: 100px; 
+	height: 100px;
 }

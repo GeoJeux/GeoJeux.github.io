@@ -120,8 +120,6 @@ var tblPays = [
   ["NICARAGUA", "Managua", "Nord", 130373, "<img src='images/Nicaragua.png' class='image'>", "<img src='images/Nicaraguad.png' class='image'>"],
   ["NIGER", "Niamey", "Afrique", 1267000, "<img src='images/Niger.png' class='image'>", "<img src='images/Nigerd.png' class='image'>"],
   ["NIGÉRIA", "Abuja", "Afrique", 923768, "<img src='images/Nigeria.png' class='image'>", "<img src='images/Nigeriad.png' class='image'>"],
-  ["NIUE", "Alofi", "Océanie", 260, "<img src='images/Niue.png' class='image'>", "<img src='images/Niued.png' class='image'>"],
-  ["NORVÈGE", "Oslo", "Europe", 148729, "<img src='images/Norvege.png' class='image'>", "<img src='images/Norveged.png' class='image'>"],
   ["NOUVELLE-ZÉLANDE", "Wellington", "Océanie", 270467, "<img src='images/Nouvelle-Zelande.png' class='image'>", "<img src='images/Nouvelle-Zelanded.png' class='image'>"],
   ["OMAN", "Mascate", "Asie", 309500, "<img src='images/Oman.png' class='image'>", "<img src='images/Omand.png' class='image'>"],
   ["OUGANDA", "Kampala", "Afrique", 241038, "<img src='images/Ouganda.png' class='image'>", "<img src='images/Ougandad.png' class='image'>"],

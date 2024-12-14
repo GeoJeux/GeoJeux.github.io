@@ -50,6 +50,7 @@ body{
 }
 .image{
   height: 250px;
+  border-radius:10px;
 }
 
 .emptySpace{
@@ -211,5 +212,5 @@ body{
 .imageCon{
 	height:150px;
 	width: 120px;
-	border-radius: 100px;
+	border-radius: 15px;
 }

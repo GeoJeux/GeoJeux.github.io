@@ -183,7 +183,6 @@ var tblPays = [
   ["URUGUAY", "Montevideo", "Amérique", 176215], 
   ["VANUATU", "Port-Vila", "Océanie", 12189], 
   ["VENEZUELA", "Caracas", "Amérique", 912050], 
-  ["VICHE", "Victoria", "Océanie", 455], 
   ["VIETNAM", "Hanoï", "Asie", 331210], 
   ["YÉMEN", "Sanaa", "Asie", 527968], 
   ["ZAMBIE", "Lusaka", "Afrique", 752612], 

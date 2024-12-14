@@ -336,7 +336,7 @@ function popup() {
 }
 
 function nord(){
-  continent = "nord";
+  continent = "Nord";
   document.getElementById("nord").style.backgroundColor = "rgb(24, 114, 139)";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -346,7 +346,7 @@ function nord(){
 }
 
 function sud(){
-  continent = "sud";
+  continent = "Sud";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "rgb(24, 114, 139)";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -356,7 +356,7 @@ function sud(){
 }
 
 function afrique(){
-  continent = "afrique";
+  continent = "Afrique";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -366,7 +366,7 @@ function afrique(){
 }
 
 function europe(){
-  continent = "europe";
+  continent = "Europe";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "rgb(24, 114, 139)";
@@ -376,7 +376,7 @@ function europe(){
 }
 
 function asie(){
-  continent = "asie";
+  continent = "Asie";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";
@@ -386,7 +386,7 @@ function asie(){
 }
 
 function oceanie(){
-  continent = "oceanie";
+  continent = "Océanie";
   document.getElementById("nord").style.backgroundColor = "transparent";
   document.getElementById("sud").style.backgroundColor = "transparent";
   document.getElementById("europe").style.backgroundColor = "transparent";

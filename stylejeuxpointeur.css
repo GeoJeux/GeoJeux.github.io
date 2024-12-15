@@ -66,7 +66,7 @@ body{
 }
 
 button[type='submit'] {
-  border: none;
+  border: solid, 2px, black;
   cursor: pointer;
   appearance: none;
   background-color: transparent; 
@@ -97,20 +97,17 @@ button[value="ÉTATS-UNIS"] img {
 	top: 350px; 
 	left: 120px;  
 	height: 196px;
-	border: solid, 2px, blue;
 }
 button[value="CANADA"] img {
 	position: absolute; 
 	left: 100px; 
 	height: 350px; 
-	border: solid, 2px, blue;
 }
 button[value="MEXIQUE"] img {
 	position: absolute; 
 	top: 546px; 
 	left: 150px; 
 	height: 243px;
-	border: solid, 2px, blue;
 }
 button[value="GUATEMALA"] img {
 	position: absolute;

@@ -92,10 +92,7 @@ button[type='submit']:focus {
 	border: solid, 10px, rgb(24, 114, 139);
 	border-radius: 60px;
 }
-img #btnSubmit {
-	height: 100%;
-}
-button[value="ÉTATS-UNIS"] {
+button[value="ÉTATS-UNIS"] img {
 	position: absolute;
 	top: 200px; 
 	left: 120px; 
@@ -103,7 +100,7 @@ button[value="ÉTATS-UNIS"] {
 	height: 150px;
 	border: solid, 2px, blue;
 }
-button[value="CANADA"] {
+button[value="CANADA"] img {
 	position: absolute;
 	top: 50px; 
 	left: 100px; 
@@ -111,7 +108,7 @@ button[value="CANADA"] {
 	height: 150px; 
 	border: solid, 2px, blue;
 }
-button[value="MEXIQUE"] {
+button[value="MEXIQUE"] img {
 	position: absolute; 
 	top: 350px; 
 	left: 150px; 

@@ -372,7 +372,7 @@ function drapeau(){
   document.getElementById("silhouette").style.backgroundColor = "transparent";
 }
 
-var i = 0;
+var i = 51;
 function test() {
 	var carte = document.querySelector(".carte");
   	carte.innerHTML = tblPays[i][typeJeux]; 

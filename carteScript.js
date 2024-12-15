@@ -44,7 +44,7 @@ var tblPays = [
   ["CORÉE DU NORD", "Pyongyang", "Asie", 120538, "<img src='images/Corée du nord.png' class='image'>", "<img src='images/Drapeau/Corée du nordd.png' class='image'>"],
   ["CORÉE DU SUD", "Séoul", "Asie", 100210, "<img src='images/Corée du sud.png' class='image'>", "<img src='images/Drapeau/Corée du sudd.png' class='image'>"],
   ["COSTA RICA", "San José", "Nord", 51100, "<img src='images/Costa Rica.png' class='image'>", "<img src='images/Drapeau/Costa ricad.png' class='image'>"],
-  ["CÔTE D'IVOIRE", "Yamoussoukro", "Afrique", 322463, "<img src='images/Côte d Ivoire.png' class='image'>", "<img src='images/Drapeau/Côte d'ivoired.png' class='image'>"],
+  ["CÔTE D'IVOIRE", "Yamoussoukro", "Afrique", 322463, "<img src='images/Côte d Ivoire.png' class='image'>", "<img src='images/Drapeau/Côte divoired.png' class='image'>"],
   ["CROATIE", "Zagreb", "Europe", 56594, "<img src='images/Croatie.png' class='image'>", "<img src='images/Drapeau/Croatied.png' class='image'>"],
   ["CUBA", "La Havane", "Nord", 109884, "<img src='images/Cuba.png' class='image'>", "<img src='images/Drapeau/Cubad.png' class='image'>"],
   ["DANEMARK", "Copenhague", "Europe", 42933, "<img src='images/Danemark.png' class='image'>", "<img src='images/Drapeau/Danemarkd.png' class='image'>"],

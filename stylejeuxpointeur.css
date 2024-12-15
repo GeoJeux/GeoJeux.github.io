@@ -94,184 +94,159 @@ button[type='submit']:focus {
 }
 button[value="ÉTATS-UNIS"] img {
 	position: absolute;
-	top: 180px; 
+	top: 350px; 
 	left: 120px;  
-	height: 84px;
+	height: 196px;
 	border: solid, 2px, blue;
 }
 button[value="CANADA"] img {
-	position: absolute;
-	top: 50px; 
+	position: absolute; 
 	left: 100px; 
-	height: 300px; 
+	height: 350px; 
 	border: solid, 2px, blue;
 }
 button[value="MEXIQUE"] img {
 	position: absolute; 
-	top: 300px; 
+	top: 546px; 
 	left: 150px; 
-	height: 104px;
-	width: 66px;
+	height: 243px;
 	border: solid, 2px, blue;
 }
 button[value="GUATEMALA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 15px;
-	width: 9px;
+	height: 34px;
 }
 button[value="BELIZE"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 9px;
-	width: 3px;
+	height: 21px;
 }
 button[value="HONDURAS"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 20px;
-	width: 2px;
+	height: 46px;
 }
 button[value="EL SALVADOR"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 8px;
-	width: 5px;
+	height: 20px;
 }
 button[value="NICARAGUA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 15px;
-	width: 11px;
+	height: 36px;
 }
 button[value="COSTA RICA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 15px;
-	width: 7px;
+	height: 35px;
 }
 button[value="PANAMA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 25px;
-	width: 4px;
+	height: 59px;
 }
 button[value="CUBA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 41px;
-	width: 6px;
+	height: 95px;
 }
 button[value="JAMAÏQUE"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 8px;
-	width: 3px;
+	height: 18px;
 }
 button[value="HAÏTI"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 10px;
-	width: 6px;
+	height: 24px;
 }
 button[value="RÉPUBLIQUE DOMINICAINE"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 13px;
-	width: 7px;
+	height: 30px;
 }
 button[value="PORTO RICO"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 5px;
-	width: 2px;
+	height: 12px;
 }
 button[value="TRINITÉ-ET-TOBAGO"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 3px;
-	width: 2px;
+	height: 8px;
 }
 button[value="BARBADE"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 1px;
-	width: 1px;
+	height: 3px;
 }
 button[value="SAINT-KITTS-ET-NEVIS"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 1px;
-	width: 0.3px;
+	height: 3px;
 }
 button[value="SAINT-MARTIN"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 0.5px;
-	width: 0.4px;
+	height: 1px;
 }
 button[value="SAINT-VINCENT-ET-LES-GRENADINES"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 1px;
-	width: 0.7px;
+	height: 2px;
 }
 button[value="ANTIGUA-ET-BARBUDA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 0.7px;
-	width: 0.4px;
+	height: 2px;
 }
 button[value="SAINT-BARTHÉLEMY"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 0.4px;
-	width: 0.2px;
+	height: 1px;
 }
 button[value="SAINTE-LUCIE"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 1px;
-	width: 0.7px;
+	height: 3px;
 }
 button[value="MONTSERRAT"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 0.5px;
-	width: 0.3px;
+	height: 1px;
 }
 button[value="DOMINIQUE"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 2px;
-	width: 0.7px;
+	height: 4px;
 }
 button[value="ANGUILLA"] img {
 	position: absolute;
 	top:;
 	left:;
-	height: 1px;
-	width: 0.2px;
+	height: 2px;
 }

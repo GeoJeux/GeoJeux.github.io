@@ -111,5 +111,167 @@ button[value="MEXIQUE"] img {
 	top: 300px; 
 	left: 150px; 
 	height: 104px;
+	width: 66px;
 	border: solid, 2px, blue;
+}
+button[value="GUATEMALA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 15px;
+	width: 9px;
+}
+button[value="BELIZE"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 9px;
+	width: 3px;
+}
+button[value="HONDURAS"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 20px;
+	width: 2px;
+}
+button[value="EL SALVADOR"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 8px;
+	width: 5px;
+}
+button[value="NICARAGUA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 15px;
+	width: 11px;
+}
+button[value="COSTA RICA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 15px;
+	width: 7px;
+}
+button[value="PANAMA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 25px;
+	width: 4px;
+}
+button[value="CUBA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 41px;
+	width: 6px;
+}
+button[value="JAMAÏQUE"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 8px;
+	width: 3px;
+}
+button[value="HAÏTI"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 10px;
+	width: 6px;
+}
+button[value="RÉPUBLIQUE DOMINICAINE"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 13px;
+	width: 7px;
+}
+button[value="PORTO RICO"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 5px;
+	width: 2px;
+}
+button[value="TRINITÉ-ET-TOBAGO"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 3px;
+	width: 2px;
+}
+button[value="BARBADE"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 1px;
+	width: 1px;
+}
+button[value="SAINT-KITTS-ET-NEVIS"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 1px;
+	width: 0.3px;
+}
+button[value="SAINT-MARTIN"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 0.5px;
+	width: 0.4px;
+}
+button[value="SAINT-VINCENT-ET-LES-GRENADINES"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 1px;
+	width: 0.7px;
+}
+button[value="ANTIGUA-ET-BARBUDA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 0.7px;
+	width: 0.4px;
+}
+button[value="SAINT-BARTHÉLEMY"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 0.4px;
+	width: 0.2px;
+}
+button[value="SAINT-LUCIE"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 1px;
+	width: 0.7px;
+}
+button[value="MONTSERRAT"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 0.5px;
+	width: 0.3px;
+}
+button[value="DOMINIQUE"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 2px;
+	width: 0.7px;
+}
+button[value="ANGUILLA"] {
+	position: absolute;
+	top:;
+	left:;
+	height: 1px;
+	width: 0.2px;
 }

@@ -96,19 +96,19 @@ button[value="ÉTATS-UNIS"] img {
 	position: absolute;
 	top: 180px; 
 	left: 120px;  
-	height: 150px;
+	height: 84px;
 	border: solid, 2px, blue;
 }
 button[value="CANADA"] img {
 	position: absolute;
 	top: 50px; 
 	left: 100px; 
-	height: 84px; 
+	height: 150px; 
 	border: solid, 2px, blue;
 }
 button[value="MEXIQUE"] img {
 	position: absolute; 
-	top: 330px; 
+	top: 300px; 
 	left: 150px; 
 	height: 104px;
 	border: solid, 2px, blue;

@@ -208,7 +208,7 @@ function jouer(){
     <div class='emptySpace'></div>\
     <div>\
       <input type='text' id='guess'>\
-      <input type='button' value='Deviner' id='devine' onclick='devine()'>\
+      <input type='button' value='Deviner' id='devine' onclick='test()'>\
       <div id='erreurs'></div>\
       <input type='button' value='Indice' id='indice' onmouseover='indice()' onmouseleave='popup'>\
       <div id='indice'  class='popup'><span class='popuptext' id='myPopup'></span></div>\
@@ -370,4 +370,11 @@ function drapeau(){
   typeJeux = 5;
   document.getElementById("drapeau").style.backgroundColor = "rgb(24, 114, 139)";
   document.getElementById("silhouette").style.backgroundColor = "transparent";
+}
+
+var i = 0;
+function test() {
+	var carte = document.querySelector(".carte");
+  	carte.innerHTML = tblPays[i][typeJeux]; 
+	i++
 }

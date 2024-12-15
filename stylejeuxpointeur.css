@@ -103,7 +103,7 @@ button[value="CANADA"] img {
 	position: absolute;
 	top: 50px; 
 	left: 100px; 
-	height: 150px; 
+	height: 300px; 
 	border: solid, 2px, blue;
 }
 button[value="MEXIQUE"] img {
@@ -247,7 +247,7 @@ button[value="SAINT-BARTHÉLEMY"] img {
 	height: 0.4px;
 	width: 0.2px;
 }
-button[value="SAINT-LUCIE"] img {
+button[value="SAINTE-LUCIE"] img {
 	position: absolute;
 	top:;
 	left:;

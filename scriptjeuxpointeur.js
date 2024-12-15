@@ -2,7 +2,7 @@ var tblCountries
 var carteAfficher
 var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","EL SALVADOR","NICARAGUA","COSTA RICA","PANAMA","CUBA","JAMAÏQUE","HAÏTI","RÉPUBLIQUE DOMINICAINE",
     "PORTO RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINT-MARTIN","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES","ANTIGUA-ET-BARBUDA","SAINT-BARTHÉLEMY",
-    "SAINT-ÉLOI","MONTSERRAT","DOMINIQUE","ANGUILLA"];
+    "MONTSERRAT","DOMINIQUE","ANGUILLA"];
 var carteAmeriqueNord = "<button type = 'submit' id='btnSubmit' value='ÉTATS-UNIS' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='CANADA' onclick = 'setAnswer()'><img src = 'images/Canada.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='MEXIQUE' onclick = 'setAnswer()'><img src = 'images/Mexique.png'></button> \
@@ -25,7 +25,7 @@ var carteAmeriqueNord = "<button type = 'submit' id='btnSubmit' value='ÉTATS-UN
 			 <button type = 'submit' id='btnSubmit' value='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='ANTIGUA-ET-BARBUDA' onclick = 'setAnswer()'><img src = 'images/AntiguaEtBarbuda.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='SAINT-BARTHÉLEMY' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
-		 	 <button type = 'submit' id='btnSubmit' value='SAINT-ÉLOI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+		 	 <button type = 'submit' id='btnSubmit' value='SAINTE-LUCIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 	 		 <button type = 'submit' id='btnSubmit' value='MONTSERRAT' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='DOMINIQUE' onclick = 'setAnswer()'><img src = 'images/Dominique.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='ANGUILLA' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button>"

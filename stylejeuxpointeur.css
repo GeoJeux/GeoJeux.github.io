@@ -92,7 +92,7 @@ button[type='submit']:focus {
 	border: solid, 10px, rgb(24, 114, 139);
 	border-radius: 60px;
 }
-img, #btnSubmit {
+img #btnSubmit {
 	height: 100%;
 }
 button[value="ÉTATS-UNIS"] {

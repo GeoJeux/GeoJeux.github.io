@@ -67,7 +67,7 @@ var tblPays = [
   ["GÉORGIE", "Tbilissi", "Asie", 69700, "<img src='images/Géorgie.png' class='image'>", "<img src='images/Drapeau/Géorgied.png' class='image'>"],
   ["GHAINA", "Accra", "Afrique", 238533, "<img src='images/Ghana.png' class='image'>", "<img src='images/Drapeau/Ghanad.png' class='image'>"],
   ["GRÈCE", "Athènes", "Europe", 131957, "<img src='images/Greece.png' class='image'>", "<img src='images/Drapeau/Grèced.png' class='image'>"],
-  ["GRENADA", "Saint-Georges", "Nord", 344, "<img src='images/Grenade.png' class='image'>", "<img src='images/Drapeau/Grenaded.png' class='image'>"],
+  ["GRENADE", "Saint-Georges", "Nord", 344, "<img src='images/Grenade.png' class='image'>", "<img src='images/Drapeau/Grenaded.png' class='image'>"],
   ["GUATEMALA", "Guatemala", "Nord", 108889, "<img src='images/Guatemala.png' class='image'>", "<img src='images/Drapeau/Guatemalad.png' class='image'>"],
   ["GUINÉE", "Conakry", "Afrique", 245857, "<img src='images/Guinée.png' class='image'>", "<img src='images/Drapeau/Guinéed.png' class='image'>"],
   ["GUINÉE ÉQUATORIALE", "Malabo", "Afrique", 1402985, "<img src='images/EquatorialGuinea.png' class='image'>", "<img src='images/Drapeau/EquatorialGuinead.png' class='image'>"],

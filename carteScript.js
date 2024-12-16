@@ -142,7 +142,7 @@ var tblPays = [
   ["SAINT-VINCENT-ET-LES GRENADINES", "Kingstown", "Nord", 389, "<img src='images/Saint Vincent.png' class='image'>", "<img src='images/Drapeau/Saint Vincented.png' class='image'>"],
   ["SALOMON", "Honiara", "Océanie", 28400, "<img src='images/Solomon Islands.png' class='image'>", "<img src='images/Drapeau/Solomon Islands.png' class='image'>"],
   ["SAMOA", "Apia", "Océanie", 294, "<img src='images/Samoa.png' class='image'>", "<img src='images/Drapeau/Samoad.png' class='image'>"],
-  ["SÃO TOMÉ-ET-PRÍNCIPE", "São Tomé", "Afrique", 964, "<img src='images/Sao Tome et Principe.png' class='image'>", "<img src='images/Drapeau/Sao Tome et Principe.png' class='image'>"],
+  ["SAO TOMÉ ET PRÍNCIPE", "São Tomé", "Afrique", 964, "<img src='images/Sao Tome et Principe.png' class='image'>", "<img src='images/Drapeau/Sao Tome et Principe.png' class='image'>"],
   ["SÉNÉGAL", "Dakar", "Afrique", 196722, "<img class='image' src='images/Senegal.png'>", "<img class='image' src='images/Drapeau/Senegald.png'>"],
   ["SERBIE", "Belgrade", "Europe", 88361, "<img class='image' src='images/Serbie.png'>", "<img class='image' src='images/Drapeau/Serbied.png'>"],
   ["SEYCHELLES", "Victoria", "Afrique", 455, "<img class='image' src='images/Seychelles.png'>", "<img class='image' src='images/Drapeau/Seychellesd.png'>"],

@@ -75,7 +75,6 @@ body{
 }
 
 #jeux{
-  display:flex;
   background-color:rgb(32 182 224);
   width: 80%;
   border-radius: 30px;

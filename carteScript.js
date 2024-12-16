@@ -204,7 +204,7 @@ function genere() {
 function jouer(){
   var message = "<div id='topLine'><div id='vies'></div><div id='score'></div>\
     <div id='stop'><input type='button' value='Arrêter' onclick='arrete()'></div></div>\
-    <div class='carte'></div>\
+    <center><div class='carte'></div></center>\
     <div class='emptySpace'></div>\
     <div>\
       <input type='text' id='guess'>\

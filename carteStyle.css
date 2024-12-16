@@ -38,9 +38,7 @@ body{
 .carte{
   width: 60%;
   height: 250px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0px;
+  margin: 0 auto;
   text-align: center;
   background-color:#c0c0c0;
   overflow:hidden;

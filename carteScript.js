@@ -164,7 +164,7 @@ var tblPays = [
   ["TIMOR-LESTE", "Dili", "Asie", 1342068, "<img class='image' src='images/Timor Leste.png'>", "<img class='image' src='images/Drapeau/TimorLested.png'>"],
   ["THAÏLANDE", "Bangkok", "Asie", 513120, "<img class='image' src='images/Thailande.png'>", "<img class='image' src='images/Drapeau/Thailanded.png'>"],
   ["TURKMÉNISTAN", "Achgabat", "Asie", 491210, "<img class='image' src='images/Turkmenistan.png'>", "<img class='image' src='images/Drapeau/Turkmenistand.png'>"],
-  ["TURQUIE", "Ankara", "Asie", 783562, "<img class='image' src='images/Turkiye.png'>", "<img class='image' src='images/Drapeau/Turquied.png'>"],
+  ["TURQUIE", "Ankara", "Europe", 783562, "<img class='image' src='images/Turkiye.png'>", "<img class='image' src='images/Drapeau/Turquied.png'>"],
   ["TOGO", "Lomé", "Afrique", 8278724, "<img class='image' src='images/Togo.png'>", "<img class='image' src='images/Drapeau/Togod.png'>"],
   ["TONGA", "Nuku'alofa", "Océanie", 748, "<img class='image' src='images/Tonga.png'>", "<img class='image' src='images/Drapeau/Tongad.png'>"],
   ["TRINITÉ-ET-TOBAGO", "Port-d'Espagne", "Nord", 5130, "<img class='image' src='images/Trinidad et Tobago.png'>", "<img class='image' src='images/Drapeau/Trinite-et-Tobagod.png'>"],

@@ -75,8 +75,7 @@ body{
   background-color:rgb(32 182 224);
   width: 80%;
   border-radius: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0 auto ;
   border: solid, 3px,  rgb(24, 114, 139); 
 }
 

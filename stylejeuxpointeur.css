@@ -92,10 +92,22 @@ button[type='submit']:focus {
 	border: solid, 10px, rgb(24, 114, 139);
 	border-radius: 60px;
 }
+
 #états-unis {
+	border: solid, 2px, black;
+  	cursor: pointer;
+  	appearance: none;
+  	background-color: transparent;
+	poistion: absolute;
 	top: 350px;
 	left: 120px;  
 	height: 196px;
+}
+#états-unis:hover {
+	transform: scale(1.2);
+}
+#états-unis:focus {
+	background-color: rgb(32 182 224);
 }
 button[value="CANADA"] img {
 	position: absolute; 

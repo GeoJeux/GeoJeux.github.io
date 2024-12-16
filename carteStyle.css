@@ -43,6 +43,7 @@ body{
   height: 250px;
   margin: 0 auto;
   text-align: center;
+  align-items: center; /* Centers child elements vertically */	
   background-color:#c0c0c0;
   overflow:hidden;
   padding: 10px;

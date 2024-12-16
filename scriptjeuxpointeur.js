@@ -9,15 +9,15 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Guatemala.png' id='GUATEMALA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Belize.png' id='BELIZE' onclick = 'setAnswer()'> \
  			 <img src = 'images/Honduras.png' id='HONDURAS' onclick = 'setAnswer()'> \
- 			 <img src = 'images/El Salvador.png' id='EL SALVADOR' onclick = 'setAnswer()'> \
+ 			 <img src = 'images/El Salvador.png' id='EL-SALVADOR' onclick = 'setAnswer()'> \
  			 <img src = 'images/Nicaragua.png' id='NICARAGUA' onclick = 'setAnswer()'> \
-			 <img src = 'images/Costa Rica.png' id='COSTA RICA' onclick = 'setAnswer()'> \
+			 <img src = 'images/Costa Rica.png' id='COSTA-RICA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Panama.png' id='PANAMA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Cuba.png' id='CUBA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Jamaique.png' id='JAMAÏQUE' onclick = 'setAnswer()'> \
 		 	 <img src = 'images/Haiti.png' id='HAÏTI' onclick = 'setAnswer()'> \
-			 <img src = 'images/République Dominicaine.png' id='RÉPUBLIQUE DOMINICAINE' onclick = 'setAnswer()'> \
-			 <img src = 'images/Porto Rico.png' id='PORTO RICO' onclick = 'setAnswer()'> \
+			 <img src = 'images/République Dominicaine.png' id='RÉPUBLIQUE-DOMINICAINE' onclick = 'setAnswer()'> \
+			 <img src = 'images/Porto Rico.png' id='PORTO-RICO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Trinidad et Tobago.png' id='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Barbados.png' id='BARBADE' onclick = 'setAnswer()'> \
 			 <img src = 'images/États-unis.png' id='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'> \

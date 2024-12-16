@@ -100,3 +100,8 @@ color: white;
   margin-left:auto;
   padding: 10px;
 }
+
+#valider {
+  border-radius: 5px
+  width:5%
+}

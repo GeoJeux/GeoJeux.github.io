@@ -96,7 +96,7 @@ var tblPays = [
   ["LESOTHO", "Maseru", "Afrique", 30355, "<img src='images/Lesotho.png' class='image'>", "<img src='images/Drapeau/Lesothod.png' class='image'>"],
   ["LETTONIE", "Riga", "Europe", 64559, "<img src='images/Lettonie.png' class='image'>", "<img src='images/Drapeau/Lettonied.png' class='image'>"],
   ["LIBAN", "Beyrouth", "Asie", 10452, "<img src='images/Liban.png' class='image'>", "<img src='images/Drapeau/Liband.png' class='image'>"],
-  ["LIBERIA", "Monrovia", "Afrique", 111369, "<img src='images/Liberie.png' class='image'>", "<img src='images/Drapeau/Liberiad.png' class='image'>"],
+  ["LIBÉRIE", "Monrovia", "Afrique", 111369, "<img src='images/Liberie.png' class='image'>", "<img src='images/Drapeau/Liberiad.png' class='image'>"],
   ["LIBYE", "Tripoli", "Afrique", 1759540, "<img src='images/Libye.png' class='image'>", "<img src='images/Drapeau/Libyed.png' class='image'>"],
   ["LITUANIE", "Vilnius", "Europe", 65300, "<img src='images/Lituanie.png' class='image'>", "<img src='images/Drapeau/Lituanied.png' class='image'>"],
   ["LUXEMBOURG", "Luxembourg", "Europe", 2586, "<img src='images/Luxembourg.png' class='image'>", "<img src='images/Drapeau/Luxembourgd.png' class='image'>"],

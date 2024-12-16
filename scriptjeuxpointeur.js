@@ -3,7 +3,7 @@ var carteAfficher
 var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","EL SALVADOR","NICARAGUA","COSTA RICA","PANAMA","CUBA","JAMAÏQUE","HAÏTI","RÉPUBLIQUE DOMINICAINE",
     "PORTO RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINT-MARTIN","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES","ANTIGUA-ET-BARBUDA","SAINT-BARTHÉLEMY",
     "MONTSERRAT","DOMINIQUE","ANGUILLA"];
-var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='états-unis' value='ÉTATS-UNIS' onclick = 'setAnswer()'> \
+var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='états-unis' alt='ÉTATS-UNIS' onclick = 'setAnswer()'> \
 			 <button type = 'submit' id='btnSubmit' value='CANADA' onclick = 'setAnswer()'><img src = 'images/Canada.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='MEXIQUE' onclick = 'setAnswer()'><img src = 'images/Mexique.png'></button> \
 			 <button type = 'submit' id='btnSubmit' value='GUATEMALA' onclick = 'setAnswer()'><img src = 'images/Guatemala.png'></button> \

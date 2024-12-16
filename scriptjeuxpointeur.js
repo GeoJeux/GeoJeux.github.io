@@ -157,7 +157,7 @@ function affichePaysNom() {
 
 
 function setAnswer() {
-	answer = event.target.value;
+	answer = event.target.alt;
 }
 
 function verifyAnswer() {

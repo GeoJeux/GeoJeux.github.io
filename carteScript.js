@@ -120,14 +120,14 @@ var tblPays = [
   ["NICARAGUA", "Managua", "Nord", 130373, "<img src='images/Nicaragua.png' class='image'>", "<img src='images/Drapeau/Nicaraguad.png' class='image'>"],
   ["NIGER", "Niamey", "Afrique", 1267000, "<img src='images/Niger.png' class='image'>", "<img src='images/Drapeau/Nigerd.png' class='image'>"],
   ["NIGÉRIA", "Abuja", "Afrique", 923768, "<img src='images/Nigeria.png' class='image'>", "<img src='images/Drapeau/Nigeriad.png' class='image'>"],
-  ["NOUVELLE-ZÉLANDE", "Wellington", "Océanie", 270467, "<img src='images/Nouvelle-Zelande.png' class='image'>", "<img src='images/Drapeau/Nouvelle-Zelanded.png' class='image'>"]
+  ["NOUVELLE-ZÉLANDE", "Wellington", "Océanie", 270467, "<img src='images/Nouvelle-Zelande.png' class='image'>", "<img src='images/Drapeau/NouvelleZelanded.png' class='image'>"]
   ["OMAN", "Mascate", "Asie", 309500, "<img src='images/Oman.png' class='image'>", "<img src='images/Drapeau/Omand.png' class='image'>"],
   ["OUGANDA", "Kampala", "Afrique", 241038, "<img src='images/Ouganda.png' class='image'>", "<img src='images/Drapeau/Ougandad.png' class='image'>"],
   ["OUZBÉKISTAN", "Tachkent", "Asie", 447400, "<img src='images/Ouzbekistan.png' class='image'>", "<img src='images/Drapeau/Ouzbekistand.png' class='image'>"],
   ["PAKISTAN", "Islamabad", "Asie", 881913, "<img src='images/Pakistan.png' class='image'>", "<img src='images/Drapeau/Pakistand.png' class='image'>"],
   ["PALAOS", "Ngerulmud", "Océanie", 459, "<img src='images/Palau.png' class='image'>", "<img src='images/Drapeau/Palaud.png' class='image'>"],
   ["PANAMA", "Panama", "Nord", 75417, "<img src='images/Panama.png' class='image'>", "<img src='images/Drapeau/Panama.png' class='image'>"],
-  ["PAPOUASIE-NOUVELLE-GUINÉE", "Port Moresby", "Océanie", 462840, "<img src='images/Papouasie-Nouvelle-Guinee.png' class='image'>", "<img src='image/Drapeau/Papouasie-Nouvelle-Guineed.png' class='image'>"],
+  ["PAPOUASIE-NOUVELLE-GUINÉE", "Port Moresby", "Océanie", 462840, "<img src='images/Papouasie-Nouvelle-Guinee.png' class='image'>", "<img src='image/Drapeau/PapouasieNouvelleGuineed.png' class='image'>"],
   ["PARAGUAY", "Asunción", "Sud", 406752, "<img src='images/Paraguay.png' class='image'>", "<img src='images/Drapeau/Paraguayd.png' class='image'>"],
   ["PÉROU", "Lima", "Sud", 1285216, "<img src='images/Perou.png' class='image'>", "<img src='images/Drapeau/Peroud.png' class='image'>"],
   ["PORTO RICO", "San Juan", "Nord", 8872, "<img src='images/Puerto Rico.png' class='image'>", "<img src='images/Drapeau/Puerto Ricod.png' class='image'>"],

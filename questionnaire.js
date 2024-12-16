@@ -124,23 +124,23 @@ pays = Math.floor(Math.random() * tblPays.length);
   }
 
 
-  function lives(){
-    var vieAffiche = document.getElementById("vies");
-    var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'> height:20px;";
-    var vieMessage = "";
-
-    if (vies > 0){
-      for (var i = 0; i < vies; i++) {
-        vieMessage += imageHTML;
-      }
-    } else {
-      popUp = document.createElement("div");
-      popUp.id = 'gameOver';
-      popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de <br><h1>" + score + "<h1><br><input type='button' value='Rejouer' onclick='location.reload();'> </a> <a href='GeoJeux.github.io'><input type='button' value='Quitter'<a>";
-      document.body.appendChild(popUp);
+function lives(){
+  var vieAffiche = document.getElementById("vies");
+  var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'>";
+  var vieMessage = "";
+  
+  if (vies > 0){
+    for (var i = 0; i < vies; i++) {
+      vieMessage += imageHTML;
     }
-    vieAffiche.innerHTML = "Vies: " + vieMessage;
+  } else {
+    popUp = document.createElement("div");
+    popUp.id = 'gameOver';
+    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>";
+    document.body.appendChild(popUp);
   }
+  vieAffiche.innerHTML = "Vies: " + vieMessage;
+}
 function arrete(){
   vies = 0;
   lives()

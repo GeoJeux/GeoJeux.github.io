@@ -196,7 +196,7 @@ function genere() {
 	 }
  }
 
- nbIndice = 0;
+  nbIndice = 0;
   var carte = document.querySelector(".carte");
   carte.innerHTML = tblPays[pays][typeJeux]; 
 }
@@ -208,7 +208,7 @@ function jouer(){
     <div class='emptySpace'></div>\
     <div>\
       <input type='text' id='guess'>\
-      <input type='button' value='Deviner' id='devine' onclick='test()'>\
+      <input type='button' value='Deviner' id='devine' onclick='devine()'>\
       <div id='erreurs'></div>\
       <input type='button' value='Indice' id='indice' onmouseover='indice()' onmouseleave='popup'>\
       <div id='indice'  class='popup'><span class='popuptext' id='myPopup'></span></div>\
@@ -372,9 +372,3 @@ function drapeau(){
   document.getElementById("silhouette").style.backgroundColor = "transparent";
 }
 
-var i = 84;
-function test() {
-	var carte = document.querySelector(".carte");
-  	carte.innerHTML = tblPays[i][typeJeux]; 
-	i++
-}

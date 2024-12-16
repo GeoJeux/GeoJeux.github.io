@@ -28,6 +28,7 @@ html {
   width: 100%;
 }
 body{
+	
   background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -74,6 +75,7 @@ body{
 }
 
 #jeux{
+  display:flex;
   background-color:rgb(32 182 224);
   width: 80%;
   border-radius: 30px;

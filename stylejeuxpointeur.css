@@ -123,14 +123,14 @@ img:focus {
 #GUATEMALA {
 	position: absolute;
 	top: 525px;
-	left: 305px;
+	left: 300px;
 	height: 45px;
 	transition: transform 0.3s ease;
 }
 #BELIZE {
 	position: absolute;
 	top: 520px;
-	left: 323px;
+	left: 325px;
 	height: 28px;
 	transition: transform 0.3s ease;
 }
@@ -143,8 +143,8 @@ img:focus {
 }
 #EL-SALVADOR {
 	position: absolute;
-	top: 550px;
-	left: 315px;
+	top: 560px;
+	left: 320px;
 	height: 20px;
 	transition: transform 0.3s ease;
 }

@@ -1,8 +1,8 @@
 var tblCountries
 var carteAfficher
-var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","EL-SALVADOR","NICARAGUA","COSTA-RICA","PANAMA","CUBA","JAMAÏQUE","HAÏTI","RÉPUBLIQUE-DOMINICAINE",
-    "PORTO-RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINT-MARTIN","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES","ANTIGUA-ET-BARBUDA","SAINT-BARTHÉLEMY",
-    "MONTSERRAT","DOMINIQUE","ANGUILLA"];
+var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","EL-SALVADOR","NICARAGUA","COSTA-RICA","PANAMA","CUBA","BAHAMAS","JAMAÏQUE",
+			"HAÏTI","RÉPUBLIQUE-DOMINICAINE","PORTO-RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES",
+			"ANTIGUA-ET-BARBUDA","DOMINIQUE"];
 var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' onclick = 'setAnswer()'> \
 			 <img src = 'images/Canada.png' id='CANADA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Mexique.png' id='MEXIQUE' onclick = 'setAnswer()'> \
@@ -23,7 +23,6 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Trinidad et Tobago.png' id='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Barbados.png' id='BARBADE' onclick = 'setAnswer()'> \
 			 <img src = 'images/Kitts et Nieve.png' id='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'> \
-			 <img src = 'images/États-unis.png' id='SAINT-MARTIN' onclick = 'setAnswer()'> \
 			 <img src = 'images/St Vincent and Grenadines.png' id='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'> \
 			 <img src = 'images/AntiguaEtBarbuda.png' id='ANTIGUA-ET-BARBUDA' onclick = 'setAnswer()'> \
 		 	 <img src = 'images/St Lucie.png' id='SAINTE-LUCIE' onclick = 'setAnswer()'> \
@@ -175,13 +174,18 @@ function verifyAnswer() {
   answer = "";
 }
 function endGame() {
-	lives = 3;
-	score = 0;
 	var affiche = document.getElementById("jeux");
 	affiche.innerHTML = "<h2>Votre score est:<br> " + score + "</h2><br> \
-			     <input id = 'btnjouer' type='button' value='Rejouer' onclick='jouerPointeur()'>"
+			     <input id = 'btnjouer' type='button' value='Rejouer' onclick='reJouerPointeur()'>"
 }
 function jouerPointeur() {
+  var affiche = document.getElementById("jeux");
+    affichePaysNom();
+    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"
+}
+function reJouerPointeur() {
+	lives = 3;
+	score = 0;
   var affiche = document.getElementById("jeux");
     affichePaysNom();
     affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"

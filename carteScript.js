@@ -139,7 +139,7 @@ var tblPays = [
   ["SAINT-KITTS-ET-NEVIS", "Basseterre", "Nord", 261, "<img src='images/Kitts et Nieve.png' class='image'>", "<img src='images/Drapeau/Saint Kitts et Nevis.png' class='image'>"],
   ["SAINT-LUCIE", "Castries", "Nord", 616, "<img src='images/Saint Lucie.png' class='image'>", "<img src='images/Drapeau/Saint Lucied.png' class='image'>"],
   ["SAINT-MARIN", "Saint-Marin", "Europe", 61, "<img src='images/Saint Marin.png' class='image'>", "<img src='images/Drapeau/SaintMarind.png' class='image'>"],
-  ["SAINT-VINCENT-ET-LES GRENADINES", "Kingstown", "Nord", 389, "<img src='images/Saint Vincent.png' class='image'>", "<img src='images/Drapeau/Saint Vincented.png' class='image'>"],
+  ["SAINT-VINCENT ET LES GRENADINES", "Kingstown", "Nord", 389, "<img src='images/Saint Vincent.png' class='image'>", "<img src='images/Drapeau/Saint Vincented.png' class='image'>"],
   ["SALOMON", "Honiara", "Océanie", 28400, "<img src='images/Solomon Islands.png' class='image'>", "<img src='images/Drapeau/Solomon Islands.png' class='image'>"],
   ["SAMOA", "Apia", "Océanie", 294, "<img src='images/Samoa.png' class='image'>", "<img src='images/Drapeau/Samoad.png' class='image'>"],
   ["SAO TOMÉ ET PRÍNCIPE", "São Tomé", "Afrique", 964, "<img src='images/Sao Tome et Principe.png' class='image'>", "<img src='images/Drapeau/Sao Tome et Principe.png' class='image'>"],

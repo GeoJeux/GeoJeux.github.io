@@ -250,23 +250,23 @@ img:focus {
 }
 #ANTIGUA-ET-BARBUDA {
 	position: absolute;
-	top:;
-	left:;
-	height: 2px;
+	top: 80px;
+	right: 40px;
+	height: 15px;
 	transition: transform 0.3s ease;
 }
 #SAINTE-LUCIE {
 	position: absolute;
-	top:;
-	left:;
-	height: 3px;
+	top: 160px;
+	left: 40px;
+	height: 15px;
 	transition: transform 0.3s ease;
 }
 #DOMINIQUE {
 	position: absolute;
-	top:;
-	left:;
-	height: 4px;
+	top: 120px;
+	right: 40px;
+	height: 15px;
 	transition: transform 0.3s ease;
 }
 

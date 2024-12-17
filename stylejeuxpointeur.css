@@ -178,9 +178,9 @@ img:focus {
 }
 #BAHAMAS {
 	position: absolute;
-	top: 430px;
+	top: 410px;
 	left: 375px;
-	height: 95px;
+	height: 90px;
 	transition: transform 0.3s ease;
 }
 #carteCaraibes {
@@ -239,13 +239,6 @@ img:focus {
 	top:;
 	left:;
 	height: 3px;
-	transition: transform 0.3s ease;
-}
-#SAINT-MARTIN {
-	position: absolute;
-	top:;
-	left:;
-	height: 1px;
 	transition: transform 0.3s ease;
 }
 #SAINT-VINCENT-ET-LES-GRENADINES {

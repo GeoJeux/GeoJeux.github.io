@@ -97,6 +97,7 @@ img:focus {
 	top: 245px;
 	left: 110px;  
 	height: 200px;
+	transition: transform 0.3s ease;
 }
 #CANADA {
 	position: absolute; 
@@ -111,7 +112,7 @@ img:focus {
 #MEXIQUE {
 	position: absolute; 
 	top: 390px; 
-	left: 120px; 
+	left: 115px; 
 	height: 155px;
 	transform: rotate(8deg);
 	transition: transform 0.3s ease;
@@ -124,138 +125,161 @@ img:focus {
 	top:;
 	left:;
 	height: 34px;
+	transition: transform 0.3s ease;
 }
 #BELIZE {
 	position: absolute;
 	top:;
 	left:;
 	height: 21px;
+	transition: transform 0.3s ease;
 }
 #HONDURAS {
 	position: absolute;
 	top:;
 	left:;
 	height: 46px;
+	transition: transform 0.3s ease;
 }
 #EL-SALVADOR {
 	position: absolute;
 	top:;
 	left:;
 	height: 20px;
+	transition: transform 0.3s ease;
 }
 #NICARAGUA {
 	position: absolute;
 	top:;
 	left:;
 	height: 36px;
+	transition: transform 0.3s ease;
 }
 #COSTA-RICA {
 	position: absolute;
 	top:;
 	left:;
 	height: 35px;
+	transition: transform 0.3s ease;
 }
 #PANAMA {
 	position: absolute;
 	top:;
 	left:;
 	height: 59px;
+	transition: transform 0.3s ease;
 }
 #CUBA {
 	position: absolute;
 	top:;
 	left:;
 	height: 95px;
+	transition: transform 0.3s ease;
 }
 #JAMAÏQUE {
 	position: absolute;
 	top:;
 	left:;
 	height: 18px;
+	transition: transform 0.3s ease;
 }
 #HAÏTI {
 	position: absolute;
 	top:;
 	left:;
 	height: 24px;
+	transition: transform 0.3s ease;
 }
 #RÉPUBLIQUE-DOMINICAINE {
 	position: absolute;
 	top:;
 	left:;
 	height: 30px;
+	transition: transform 0.3s ease;
 }
 #PORTO-RICO {
 	position: absolute;
 	top:;
 	left:;
 	height: 12px;
+	transition: transform 0.3s ease;
 }
 #TRINITÉ-ET-TOBAGO {
 	position: absolute;
 	top:;
 	left:;
 	height: 8px;
+	transition: transform 0.3s ease;
 }
 #BARBADE {
 	position: absolute;
 	top:;
 	left:;
 	height: 3px;
+	transition: transform 0.3s ease;
 }
 #SAINT-KITTS-ET-NEVIS {
 	position: absolute;
 	top:;
 	left:;
 	height: 3px;
+	transition: transform 0.3s ease;
 }
 #SAINT-MARTIN {
 	position: absolute;
 	top:;
 	left:;
 	height: 1px;
+	transition: transform 0.3s ease;
 }
 #SAINT-VINCENT-ET-LES-GRENADINES {
 	position: absolute;
 	top:;
 	left:;
 	height: 2px;
+	transition: transform 0.3s ease;
 }
 #ANTIGUA-ET-BARBUDA {
 	position: absolute;
 	top:;
 	left:;
 	height: 2px;
+	transition: transform 0.3s ease;
 }
 #SAINT-BARTHÉLEMY {
 	position: absolute;
 	top:;
 	left:;
 	height: 1px;
+	transition: transform 0.3s ease;
 }
 #SAINTE-LUCIE {
 	position: absolute;
 	top:;
 	left:;
 	height: 3px;
+	transition: transform 0.3s ease;
 }
 #MONTSERRAT {
 	position: absolute;
 	top:;
 	left:;
 	height: 1px;
+	transition: transform 0.3s ease;
 }
 #DOMINIQUE {
 	position: absolute;
 	top:;
 	left:;
 	height: 4px;
+	transition: transform 0.3s ease;
 }
 #ANGUILLA {
 	position: absolute;
 	top:;
 	left:;
 	height: 2px;
+	transition: transform 0.3s ease;
 }
 
 

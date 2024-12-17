@@ -46,10 +46,10 @@ body{
   
   background-color:#c0c0c0;
   overflow:hidden;
-  padding: 10px;
+  
   border: solid, 5px, rgb(24, 114, 139);
   border-radius: 5px;
-  display: block;
+
 }
 .image{
   height: 250px;

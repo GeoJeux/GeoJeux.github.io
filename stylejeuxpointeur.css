@@ -150,7 +150,7 @@ img:focus {
 }
 #NICARAGUA {
 	position: absolute;
-	top: 560px;
+	top: 557px;
 	left: 345px;
 	height: 44px;
 	transition: transform 0.3s ease;
@@ -164,15 +164,15 @@ img:focus {
 }
 #PANAMA {
 	position: absolute;
-	top:;
-	left:;
-	height: 59px;
+	top: 615px;
+	left: 385px;
+	height: 40px;
 	transition: transform 0.3s ease;
 }
 #CUBA {
 	position: absolute;
-	top:;
-	left:;
+	top: 490px;
+	left: 345px;
 	height: 95px;
 	transition: transform 0.3s ease;
 }

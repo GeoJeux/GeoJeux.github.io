@@ -14,6 +14,7 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Costa Rica.png' id='COSTA-RICA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Panama.png' id='PANAMA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Cuba.png' id='CUBA' onclick = 'setAnswer()'> \
+			 <img src = 'images/Bahamas.png' id='BAHAMAS' onclick = 'setAnswer()'> \
 			 <div id='carteCaraibes'> \
 			 <img src = 'images/Jamaique.png' id='JAMAÏQUE' onclick = 'setAnswer()'> \
 		 	 <img src = 'images/Haiti.png' id='HAÏTI' onclick = 'setAnswer()'> \
@@ -21,15 +22,12 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Porto Rico.png' id='PORTO-RICO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Trinidad et Tobago.png' id='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Barbados.png' id='BARBADE' onclick = 'setAnswer()'> \
-			 <img src = 'images/États-unis.png' id='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'> \
+			 <img src = 'images/Kitts et Nieve.png' id='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'> \
 			 <img src = 'images/États-unis.png' id='SAINT-MARTIN' onclick = 'setAnswer()'> \
-			 <img src = 'images/États-unis.png' id='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'> \
+			 <img src = 'images/St Vincent and Grenadines.png' id='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'> \
 			 <img src = 'images/AntiguaEtBarbuda.png' id='ANTIGUA-ET-BARBUDA' onclick = 'setAnswer()'> \
-			 <img src = 'images/États-unis.png' id='SAINT-BARTHÉLEMY' onclick = 'setAnswer()'> \
-		 	 <img src = 'images/États-unis.png' id='SAINTE-LUCIE' onclick = 'setAnswer()'> \
-	 		 <img src = 'images/États-unis.png' id='MONTSERRAT' onclick = 'setAnswer()'> \
+		 	 <img src = 'images/St Lucie.png' id='SAINTE-LUCIE' onclick = 'setAnswer()'> \
 			 <img src = 'images/Dominique.png' id='DOMINIQUE' onclick = 'setAnswer()'> \
-			 <img src = 'images/États-unis.png' id='ANGUILLA' onclick = 'setAnswer()'> \
 			 </div>"
 
 var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRESIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];

@@ -29,10 +29,10 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Dominique.png' id='DOMINIQUE' onclick = 'setAnswer()'> \
 			 </div>"
 
-var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRESIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];
-var carteAmeriqueSud = "<button type = 'submit' id='btnSubmit' value='ARGENTINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
-		       	<button type = 'submit' id='btnSubmit' value='BOLIVIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
-			<button type = 'submit' id='btnSubmit' value='BRESIL' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
+var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRÉSIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];
+var carteAmeriqueSud = "<img src = 'images/Argetine.png' id='ARGENTINE' onclick = 'setAnswer()'> \
+		       	<img src = 'images/Bolivie.png' id='BOLIVIE' onclick = 'setAnswer()'> \
+			<img src = 'images/Brézil.png' id='BRÉSIL' onclick = 'setAnswer()'> \
 			<button type = 'submit' id='btnSubmit' value='CHILI' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			<button type = 'submit' id='btnSubmit' value='COLOMBIE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
 			<button type = 'submit' id='btnSubmit' value='ECUADOR' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \
@@ -176,7 +176,8 @@ function verifyAnswer() {
 function endGame() {
 	var affiche = document.getElementById("jeux");
 	affiche.innerHTML = "<h2>Votre score est:<br> " + score + "</h2><br> \
-			     <input id = 'btnjouer' type='button' value='Rejouer' onclick='reJouerPointeur()'>"
+			     <input id = 'btnjouer' type='button' value='Rejouer' onclick='reJouerPointeur()'> \
+			     <div class = 'emptySpace'></div>"
 }
 function jouerPointeur() {
   var affiche = document.getElementById("jeux");

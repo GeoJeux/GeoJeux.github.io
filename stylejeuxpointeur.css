@@ -176,13 +176,20 @@ img:focus {
 	height: 95px;
 	transition: transform 0.3s ease;
 }
+#BAHAMAS {
+	position: absolute;
+	top: 430px;
+	left: 375px;
+	height: 95px;
+	transition: transform 0.3s ease;
+}
 #carteCaraibes {
 	position: relativ;
 	background: inherit;
 	border: solid, 3px, black;
 	height: 645px;
 	width: 45%;
-	top: 20px;
+	margin-top: 20px;
 	margin-left: 50%;
 }
 #JAMAÏQUE {
@@ -255,13 +262,6 @@ img:focus {
 	height: 2px;
 	transition: transform 0.3s ease;
 }
-#SAINT-BARTHÉLEMY {
-	position: absolute;
-	top:;
-	left:;
-	height: 1px;
-	transition: transform 0.3s ease;
-}
 #SAINTE-LUCIE {
 	position: absolute;
 	top:;
@@ -269,25 +269,11 @@ img:focus {
 	height: 3px;
 	transition: transform 0.3s ease;
 }
-#MONTSERRAT {
-	position: absolute;
-	top:;
-	left:;
-	height: 1px;
-	transition: transform 0.3s ease;
-}
 #DOMINIQUE {
 	position: absolute;
 	top:;
 	left:;
 	height: 4px;
-	transition: transform 0.3s ease;
-}
-#ANGUILLA {
-	position: absolute;
-	top:;
-	left:;
-	height: 2px;
 	transition: transform 0.3s ease;
 }
 

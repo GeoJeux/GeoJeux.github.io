@@ -215,8 +215,8 @@ img:focus {
 }
 #PORTO-RICO {
 	position: absolute;
-	top:;
-	left:;
+	top:75px;
+	left:350px;
 	height: 12px;
 	transition: transform 0.3s ease;
 }

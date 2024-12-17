@@ -43,13 +43,13 @@ body{
   height: 250px;
   margin: 0 auto;
   text-align: center;
-  align-items: center; /* Centers child elements vertically */	
+  
   background-color:#c0c0c0;
   overflow:hidden;
   padding: 10px;
   border: solid, 5px, rgb(24, 114, 139);
   border-radius: 5px;
-	display: block;
+  display: block;
 }
 .image{
   height: 250px;
@@ -82,6 +82,7 @@ body{
   border-radius: 30px;
   margin:0 auto ;
   border: solid, 3px,  rgb(24, 114, 139); 
+	 align-items: center; /* This centers child elements vertically */
 }
 
 #vies{

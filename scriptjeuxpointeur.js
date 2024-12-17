@@ -14,6 +14,7 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Costa Rica.png' id='COSTA-RICA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Panama.png' id='PANAMA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Cuba.png' id='CUBA' onclick = 'setAnswer()'> \
+			 <div id='carteCaraibes'> \
 			 <img src = 'images/Jamaique.png' id='JAMAÏQUE' onclick = 'setAnswer()'> \
 		 	 <img src = 'images/Haiti.png' id='HAÏTI' onclick = 'setAnswer()'> \
 			 <img src = 'images/République Dominicaine.png' id='RÉPUBLIQUE-DOMINICAINE' onclick = 'setAnswer()'> \
@@ -28,7 +29,8 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 		 	 <img src = 'images/États-unis.png' id='SAINTE-LUCIE' onclick = 'setAnswer()'> \
 	 		 <img src = 'images/États-unis.png' id='MONTSERRAT' onclick = 'setAnswer()'> \
 			 <img src = 'images/Dominique.png' id='DOMINIQUE' onclick = 'setAnswer()'> \
-			 <img src = 'images/États-unis.png' id='ANGUILLA' onclick = 'setAnswer()'>"
+			 <img src = 'images/États-unis.png' id='ANGUILLA' onclick = 'setAnswer()'> \
+			 </div>"
 
 var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRESIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];
 var carteAmeriqueSud = "<button type = 'submit' id='btnSubmit' value='ARGENTINE' onclick = 'setAnswer()'><img src = 'images/États-unis.png'></button> \

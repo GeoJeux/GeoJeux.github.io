@@ -62,7 +62,7 @@ body{
   margin-right: auto;
   height: 800px;
   border-radius: 30px;
-  border: solid, 1px. white;
+  border: solid, 1px, white;
 }
 
 img {
@@ -100,14 +100,12 @@ img:focus {
 }
 #CANADA {
 	position: absolute; 
-	transform: rotate(-8deg);
 	left: 100px; 
 	height: 340px; 
 }
 #MEXIQUE {
 	position: absolute; 
-	transform: rotate(5deg);
-	top: 365px; 
+	top: 380px; 
 	left: 135px; 
 	height: 175px;
 }

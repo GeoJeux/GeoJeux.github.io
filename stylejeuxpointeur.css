@@ -176,6 +176,15 @@ img:focus {
 	height: 95px;
 	transition: transform 0.3s ease;
 }
+#carteCaraibes {
+	position: relativ;
+	background: inherit;
+	border: solid, 3px, black;
+	height: 645px;
+	width: 45%;
+	top: 20px;
+	margin-left: 50%;
+}
 #JAMAÏQUE {
 	position: absolute;
 	top:;

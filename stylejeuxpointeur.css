@@ -128,10 +128,9 @@ img:focus {
 	transition: transform 0.3s ease;
 }
 #BELIZE {
-	border: solid, 2px, blue;
 	position: absolute;
-	top:600;
-	left:340;
+	top: 515px;
+	left: 325px;
 	height: 21px;
 	transition: transform 0.3s ease;
 }

@@ -129,7 +129,7 @@ var tblPays = [
   ["PANAMA", "Panama", "Nord", 75417, "<img src='images/Panama.png' class='image'>", "<img src='images/Drapeau/Panama.png' class='image'>"],
   ["PAPOUASIE-NOUVELLE-GUINÉE", "Port Moresby", "Océanie", 462840, "<img src='images/Papouasie-Nouvelle-Guinee.png' class='image'>", "<img src='image/Drapeau/PapouasieNouvelleGuineed.png' class='image'>"],
   ["PARAGUAY", "Asunción", "Sud", 406752, "<img src='images/Paraguay.png' class='image'>", "<img src='images/Drapeau/Paraguayd.png' class='image'>"],
-  ["PÉROU", "Lima", "Sud", 1285216, "<img src='images/Perou.png' class='image'>", "<img src='images/Drapeau/Peroud.png' class='image'>"],
+  ["PÉROU", "Lima", "Sud", 1285216, "<img src='images/Peru.png' class='image'>", "<img src='images/Drapeau/Peroud.png' class='image'>"],
   ["PORTO RICO", "San Juan", "Nord", 8872, "<img src='images/Puerto Rico.png' class='image'>", "<img src='images/Drapeau/Puerto Ricod.png' class='image'>"],
   ["QATAR", "Doha", "Asie", 11571, "<img src='images/Qatar.png' class='image'>", "<img src='images/Drapeau/Qatard.png' class='image'>"],
   ["ROUMANIE", "Bucarest", "Europe", 238391, "<img src='images/Roumanie.png' class='image'>", "<img src='images/Drapeau/Roumanied.png' class='image'>"],

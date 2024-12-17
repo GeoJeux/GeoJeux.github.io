@@ -124,12 +124,12 @@ img:focus {
 	position: absolute;
 	top: 525px;
 	left: 305px;
-	height: 34px;
+	height: 45px;
 	transition: transform 0.3s ease;
 }
 #BELIZE {
 	position: absolute;
-	top: 525px;
+	top: 520px;
 	left: 323px;
 	height: 28px;
 	transition: transform 0.3s ease;
@@ -137,13 +137,13 @@ img:focus {
 #HONDURAS {
 	position: absolute;
 	top: 535px;
-	left: 315px;
+	left: 330px;
 	height: 46px;
 	transition: transform 0.3s ease;
 }
 #EL-SALVADOR {
 	position: absolute;
-	top: 540px;
+	top: 550px;
 	left: 315px;
 	height: 20px;
 	transition: transform 0.3s ease;

@@ -118,12 +118,12 @@ img:focus {
 	transition: transform 0.3s ease;
 }
 #MEXIQUE:hover {
-	transform: rotate(5deg) scale(1.2);
+	transform: rotate(8deg) scale(1.2);
 }
 #GUATEMALA {
 	position: absolute;
-	top: 500px;
-	left: 165px;
+	top: 530px;
+	left: 240px;
 	height: 34px;
 	transition: transform 0.3s ease;
 }

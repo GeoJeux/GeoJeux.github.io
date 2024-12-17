@@ -138,7 +138,7 @@ img:focus {
 	position: absolute;
 	top: 535px;
 	left: 330px;
-	height: 46px;
+	height: 35px;
 	transition: transform 0.3s ease;
 }
 #EL-SALVADOR {
@@ -151,15 +151,15 @@ img:focus {
 #NICARAGUA {
 	position: absolute;
 	top: 565px;
-	left: 330px;
-	height: 36px;
+	left: 345px;
+	height: 44px;
 	transition: transform 0.3s ease;
 }
 #COSTA-RICA {
 	position: absolute;
-	top: 575px;
-	left: 350px;
-	height: 35px;
+	top: 590px;
+	left: 360px;
+	height: 32px;
 	transition: transform 0.3s ease;
 }
 #PANAMA {

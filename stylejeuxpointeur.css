@@ -94,20 +94,20 @@ img:focus {
 
 #ÉTATS-UNIS {
 	position: absolute;
-	top: 300px;
+	top: 240px;
 	left: 120px;  
-	height: 215px;
+	height: 210px;
 }
 #CANADA {
 	position: absolute; 
 	left: 100px; 
-	height: 300px; 
+	height: 340px; 
 }
 #MEXIQUE {
 	position: absolute; 
-	top: 515px; 
+	top: 375px; 
 	left: 150px; 
-	height: 200px;
+	height: 175px;
 }
 #GUATEMALA {
 	position: absolute;

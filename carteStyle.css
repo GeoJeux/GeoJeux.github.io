@@ -39,19 +39,21 @@ body{
 }
 
 .carte{
-  width: 60%;
+  width: 65%;
   height: 250px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  
   background-color:#c0c0c0;
   overflow:hidden;
-  
+  padding: 10px;
   border: solid, 5px, rgb(24, 114, 139);
   border-radius: 5px;
-
+  display: block;
 }
 .image{
+  margin-left: auto;
+  margin-right: auto;
   height: 250px;
   border-radius:10px;
 }
@@ -80,9 +82,10 @@ body{
   background-color:rgb(32 182 224);
   width: 80%;
   border-radius: 30px;
-  margin:0 auto ;
+  margin-right: auto ;
+  margin-left:auto;
+  text-align: center;
   border: solid, 3px,  rgb(24, 114, 139); 
-	 align-items: center; /* This centers child elements vertically */
 }
 
 #vies{
@@ -92,6 +95,7 @@ body{
   overflow: hidden;
   float: right;
   padding: 20px;
+  margin-right: 20px;
 }
 
 #indice{
@@ -208,8 +212,8 @@ body{
   float: left;
   width:40px;
   margin-left: 100px;
-  height: 50px;
-  padding-top: 20px;
+  height: 40px;
+  margin-top:20px;
 }
 
 .imageCon{

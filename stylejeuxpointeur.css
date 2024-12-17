@@ -122,14 +122,15 @@ img:focus {
 }
 #GUATEMALA {
 	position: absolute;
-	top: 530px;
+	top: 515px;
 	left: 320px;
 	height: 34px;
 	transition: transform 0.3s ease;
 }
 #BELIZE {
+	border: solid, 2px, blue;
 	position: absolute;
-	top:530;
+	top:600;
 	left:340;
 	height: 21px;
 	transition: transform 0.3s ease;

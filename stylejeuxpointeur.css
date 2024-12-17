@@ -194,23 +194,23 @@ img:focus {
 }
 #JAMAÏQUE {
 	position: absolute;
-	top:;
-	left:;
-	height: 18px;
+	top: 40px;
+	left: 20px;
+	height: 40px;
 	transition: transform 0.3s ease;
 }
 #HAÏTI {
 	position: absolute;
-	top:;
-	left:;
-	height: 24px;
+	top: 30px;
+	left: 60px;
+	height: 80px;
 	transition: transform 0.3s ease;
 }
 #RÉPUBLIQUE-DOMINICAINE {
 	position: absolute;
-	top:;
-	left:;
-	height: 30px;
+	top: 30px;
+	left: 90px;
+	height: 80px;
 	transition: transform 0.3s ease;
 }
 #PORTO-RICO {

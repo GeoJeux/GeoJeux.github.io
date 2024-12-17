@@ -177,6 +177,8 @@ function verifyAnswer() {
   answer = "";
 }
 function endGame() {
+	lives = 3;
+	score = 0;
 	var affiche = document.getElementById("jeux");
 	affiche.innerHTML = "<h2>Votre score est:<br> " + score + "</h2><br> \
 			     <input id = 'btnjouer' type='button' value='Rejouer' onclick='jouerPointeur()'>"

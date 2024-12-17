@@ -22,8 +22,8 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Porto Rico.png' id='PORTO-RICO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Trinidad et Tobago.png' id='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Barbados.png' id='BARBADE' onclick = 'setAnswer()'> \
-			 <img src = 'images/KittsetNieve.png' id='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'> \
-			 <img src = 'images/St Vincent and Grenadines.png' id='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'> \
+			 <img src = 'images/KittsetNieve .png' id='SAINT-KITTS-ET-NEVIS' onclick = 'setAnswer()'> \
+			 <img src = 'images/Saint Vincent.png' id='SAINT-VINCENT-ET-LES-GRENADINES' onclick = 'setAnswer()'> \
 			 <img src = 'images/AntiguaEtBarbuda.png' id='ANTIGUA-ET-BARBUDA' onclick = 'setAnswer()'> \
 		 	 <img src = 'images/St Lucie.png' id='SAINTE-LUCIE' onclick = 'setAnswer()'> \
 			 <img src = 'images/Dominique.png' id='DOMINIQUE' onclick = 'setAnswer()'> \

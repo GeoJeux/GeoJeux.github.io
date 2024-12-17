@@ -134,6 +134,11 @@ function lives(){
       vieMessage += imageHTML;
     }
   } else {
+	switch(continent){
+		case "Nord":
+			score = score*1.2
+			
+	}
     popUp = document.createElement("div");
     popUp.id = 'gameOver';
     popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>";

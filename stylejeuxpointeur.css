@@ -187,9 +187,9 @@ img:focus {
 	position: relative;
 	background: inherit;
 	border: solid, 3px, black;
-	height: 645px;
+	height: 350px;
 	width: 45%;
-	margin-top: 20px;
+	margin-top: 400px;
 	margin-left: 50%;
 }
 #JAMAÏQUE {
@@ -230,21 +230,21 @@ img:focus {
 #BARBADE {
 	position: absolute;
 	top: 200px;
-	right: 15px;
-	height: 30px;
+	right: 10px;
+	height: 20px;
 	transition: transform 0.3s ease;
 }
 #SAINT-KITTS-ET-NEVIS {
 	position: absolute;
-	top: 80px;
+	top: 90px;
 	right: 70px;
 	height: 30px;
 	transition: transform 0.3s ease;
 }
 #SAINT-VINCENT-ET-LES-GRENADINES {
 	position: absolute;
-	top:;
-	left:;
+	top: 200px;
+	left: 40px;
 	height: 30px;
 	transition: transform 0.3s ease;
 }

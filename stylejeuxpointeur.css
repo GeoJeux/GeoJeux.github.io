@@ -102,12 +102,16 @@ img:focus {
 	position: absolute; 
 	left: 100px; 
 	height: 340px; 
+	transform: rotate(-8deg);
+	transition: transform 0.3s ease;
 }
 #MEXIQUE {
 	position: absolute; 
-	top: 380px; 
+	top: 385px; 
 	left: 135px; 
 	height: 175px;
+	transform: rotate(5deg);
+	transition: transform 0.3s ease;
 }
 #GUATEMALA {
 	position: absolute;

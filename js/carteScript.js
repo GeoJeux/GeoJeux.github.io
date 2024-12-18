@@ -223,9 +223,9 @@ function jouer() {
   var affiche = document.getElementById("score"); // Sélectionne l'élément pour afficher le score
   affiche.innerHTML = "Score : " + score; // Affiche le score actuel
 
-  lives(); // Appelle la fonction pour afficher les vies restantes
-  genere(); // Appelle la fonction pour générer un pays
-}
+  lives(); 
+  genere(); 
+  }
 
 function devine() {
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate

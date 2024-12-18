@@ -1,57 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Déclaration du type de document HTML -->
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8"> <!-- Définit l'encodage des caractères -->
+  <meta name="viewport" content="width=device-width"> <!-- Assure une bonne mise en page sur les appareils mobiles -->
   <link rel="icon" type="image/x-icon" href="images/Logo.png"> <!-- Image du logo dans la barre de navigation -->
-  <title>Questionnaire</title>
-  <link href="Css/questionnaire.css" rel="stylesheet" type="text/css" />
+  <title>Questionnaire</title> <!-- Titre de l'onglet du navigateur -->
+  <link href="Css/questionnaire.css" rel="stylesheet" type="text/css" /> <!-- Lien vers la feuille de style CSS -->
 
-  
-
-  <title>Questionnaire</title>
+  <title>Questionnaire</title> <!-- Titre de l'onglet du navigateur (répété, à supprimer) -->
 
 </head>
 
 <body>
-  <center>
-  <div class="topnav">
-        <a href="index.html">Accueil</a>
-        <a href="carte.html">Devinette</a>
-        <a href="jeuxpointeur.html">Carte</a>
-        <a class="active" href="questionnaire.html">Capitale<a/>
-        <a  href="index.html"><img style="float:right;" src="images/Logo.png" height="20px"></a>
+  <center> <!-- Centre le contenu de la page -->
+  <div class="topnav"> <!-- Barre de navigation -->
+        <a href="index.html">Accueil</a> <!-- Lien vers la page d'accueil -->
+        <a href="carte.html">Devinette</a> <!-- Lien vers la page de devinette -->
+        <a href="jeuxpointeur.html">Carte</a> <!-- Lien vers la page de carte -->
+        <a class="active" href="questionnaire.html">Capitale</a> <!-- Lien vers la page du questionnaire, avec classe active -->
+        <a href="index.html"><img style="float:right;" src="images/Logo.png" height="20px"></a> <!-- Logo à droite dans la barre de navigation -->
   </div>
 
-         <div id = boxTitre> 
-
-            
-             <h1> Questionnaire des capitales</h1>
-
+         <div id="boxTitre"> <!-- Conteneur pour le titre du questionnaire -->
+             <h1> Questionnaire des capitales</h1> <!-- Titre principal du questionnaire -->
            </div>
 
-           <div class = "emptySpace"></div>
+           <div class="emptySpace"></div> <!-- Espace vide  -->
 
-
-           <div id = "jeux">
-<b><i><h2 style = "color: white">Instruction</h2></i></b>  <p style = "color: white"><i>Bien venu au jeu questionnaire sur les capitales!</i></h3><br><br>
-                    Ce jeu va afficher une question qui te demandera la capital d'un pays pour testé vot connaisance. Pendant l'expérience, vous avez 3 vies pour répondre et indiqué la capital.</p>
+           <div id="jeux"> <!-- Conteneur pour le jeu -->
+<b><i><h2 style="color: white">Instruction</h2></i></b>  <p style="color: white"><i>Bienvenu au jeu questionnaire sur les capitales!</i></h3><br><br>
+                    Ce jeu va afficher une question qui te demandera la capitale d'un pays pour tester votre connaissance. Pendant l'expérience, vous avez 3 vies pour répondre et indiquer la capitale.</p> <!-- Instructions du jeu -->
              
-                                                                              <input type = "button" value = "Démarer" id ="valider" onclick = "jouer()"> 
+                                                                              <input type="button" value="Démarrer" id="valider" onclick="jouer()"> <!-- Bouton pour démarrer le jeu -->
 
-          <div class = "emptySpace"></div>
-         <div class = "emptySpace"></div>
+          <div class="emptySpace"></div> <!-- Espace vide  -->
+         <div class="emptySpace"></div> <!-- Espace vide  -->
              
            </div>
-
 
            
 
-<script src = "js/questionnaire.js"></script>
-
-
-
+<script src="js/questionnaire.js"></script> <!-- Lien vers le fichier JavaScript pour la logique du jeu -->
 
          </center>
 

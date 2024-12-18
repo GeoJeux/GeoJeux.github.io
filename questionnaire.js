@@ -126,7 +126,7 @@ pays = Math.floor(Math.random() * tblPays.length);
 
 function lives() {
   var vieAffiche = document.getElementById("vies");
-  var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png' style='width: " + (20 + vies * 3) + "px;'>"; // Smaller hearts, smaller size increments
+  var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png' style='width: " + (15 + vies * 2) + "px;'>"; // Smaller hearts, smaller size increments
   var vieMessage = "";
 
   if (vies > 0) {

@@ -216,7 +216,7 @@ function jouer() {
     </div>\
     <div class='emptySpace'></div>"; // Crée le message HTML pour le jeu
   var affiche = document.getElementById("jeux"); // Sélectionne l'élément avec le ID 'jeux'
-  affiche.innerHTML = message; // Affiche le message dans l'élément 'jeux'
+  affiche.innerHTML = message; /* Affiche le message dans l'élément 'jeux' */
 
   document.getElementByClassName("carte").focus(); // Met le focus sur le champ de saisie
 
@@ -263,10 +263,6 @@ function lives() {
       vieMessage += imageHTML; // Ajoute une image de vie au message
     }
   } else {
-    switch (continent) { // Vérifie le continent sélectionné
-      case "Nord":
-        score = score * 1.2; // Augmente le score de 20% si le continent est le Nord
-    }	  
     popUp = document.createElement("div"); // Crée un nouvel élément pour le message de fin de jeu
     popUp.id = 'gameOver'; // Définit l'ID de l'élément
     popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>"; // Message de fin de jeu

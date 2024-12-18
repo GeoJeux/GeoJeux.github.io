@@ -228,3 +228,9 @@ body{
 	margin-right: 10px;
 }
 
+#instruction{
+	 padding:20px;
+	 margin-left: auto;
+	 margin-right:auto;
+	 width: 70%;
+ }

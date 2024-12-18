@@ -1,3 +1,4 @@
+/*Tableaux de tout les pays du monde avec leur superficie, image de leur drapeau et un image de leur silhouette*/
 var tblPays = [
   ["AFGHANISTAN", "Kaboul", "Asie", 652230, "<img src='images/Afghanistan.png' class='image'>", "<img src='images/Drapeau/Afghanistand.png' class='image'>"],
   ["AFRIQUE DU SUD", "Pretoria", "Afrique", 1219090, "<img src='images/AfriqueDuSud.png' class='image'>", "<img src='images/Drapeau/AfriqueDuSudd.png' class='image'>"],
@@ -179,29 +180,29 @@ var tblPays = [
   ["ZIMBABWE", "Harare", "Afrique", 390757, "<img class='image' src='images/Zimbabwe.png'>", "<img class='image' src='images/Drapeau/Zimbabwed.png'>"]
 ]
 
-var continent;
-var vies = 3
-var pays;
-var nbIndice = 0;
-var score = 0;
-var max;
-var typeJeux;
+var continent; // Déclare une variable pour stocker le continent sélectionné
+var vies = 3; // Initialise le nombre de vies à 3
+var pays; // Déclare une variable pour stocker le pays sélectionné
+var nbIndice; // Déclare une variable pour stocker nombre d'indices
+var score = 0; // Initialise le score à 0
+var max; // Déclare une variable pour stocker le score maximum
+var typeJeux; // Déclare une variable pour stocker le type de jeu
 
 function genere() {
-  pays = Math.floor(Math.random() * tblPays.length);
-  
- if (continent != null){
-	 while (tblPays[pays][2] != continent){
-		 pays = Math.floor(Math.random() * tblPays.length);
-	 }
- }
+  pays = Math.floor(Math.random() * tblPays.length); // Sélectionne un pays au hasard dans le tableau
 
-  nbIndice = 0;
-  var carte = document.querySelector(".carte");
-  carte.innerHTML = tblPays[pays][typeJeux]; 
+  if (continent != null) { // Vérifie si un continent a été sélectionné
+    while (tblPays[pays][2] != continent) { // Continue à sélectionner un pays jusqu'à ce qu'il corresponde au continent selectionner
+      pays = Math.floor(Math.random() * tblPays.length); // Sélectionne un nouveau pays aléatoire
+    }
+  }
+
+  nbIndice = 0; // Réinitialise le nombre d'indices utilisés
+  var carte = document.querySelector(".carte"); // Sélectionne l'élément avec la classe 'carte'
+  carte.innerHTML = tblPays[pays][typeJeux]; // Affiche le pays sélectionné dans l'élément 'carte'
 }
   
-function jouer(){
+function jouer() {
   var message = "<div id='topLine'><div id='vies'></div><div id='score'></div>\
     <div id='stop'><input type='button' value='Arrêter' onclick='arrete()'></div></div>\
     <center><div class='carte'></div></center>\
@@ -213,166 +214,161 @@ function jouer(){
       <input type='button' value='Indice' id='indice' onmouseover='indice()' onmouseleave='popup'>\
       <div id='indice'  class='popup'><span class='popuptext' id='myPopup'></span></div>\
     </div>\
-    <div class='emptySpace'></div>"
-  var affiche = document.getElementById("jeux")
-  affiche.innerHTML = message;
+    <div class='emptySpace'></div>"; // Crée le message HTML pour le jeu
+  var affiche = document.getElementById("jeux"); // Sélectionne l'élément avec le ID 'jeux'
+  affiche.innerHTML = message; // Affiche le message dans l'élément 'jeux'
 
-  document.getElementById("guess").focus()
+  document.getElementByClassName("carte").focus(); // Met le focus sur le champ de saisie
 
-  var affiche = document.getElementById("score");
-  affiche.innerHTML = "Score : " + score;
+  var affiche = document.getElementById("score"); // Sélectionne l'élément pour afficher le score
+  affiche.innerHTML = "Score : " + score; // Affiche le score actuel
 
-  lives();
-  genere();
+  lives(); // Appelle la fonction pour afficher les vies restantes
+  genere(); // Appelle la fonction pour générer un pays
 }
 
-function devine(){
-  var essaie = document.getElementById("guess").value.toUpperCase().trim(" ");
+function devine() {
+  var essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate
 
-	if (essaie != " "){
-		if (essaie == tblPays[pays][0]){
-			message = "Bravo, vous avez réussit à deviner le bon pays";
-			score += 500;
-			
-			genere()
-		 } else {
-			vies--
-			message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>";
-		 }
-	} else {
-		message = "<br>Entrée un pays!<br>";
-	}
-  
-  lives();
-  var affiche = document.getElementById("score");
-  affiche.innerHTML = "Score : " + score;
-  
-  document.getElementById("erreurs").innerHTML = message
-  var textBox = document.getElementById("guess")
-  textBox.value = "";
-  
-}
-
-
-function lives(){
-  var vieAffiche = document.getElementById("vies");
-  var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'>";
-  var vieMessage = "";
-  
-  if (vies > 0){
-    for (var i = 0; i < vies; i++) {
-      vieMessage += imageHTML;
+  if (essaie != " ") { // Vérifie si l'entrée n'est pas vide
+    if (essaie == tblPays[pays][0]) { // Vérifie si la réponse est correcte
+      message = "Bravo, vous avez réussit à deviner le bon pays"; // Message de succès
+      score += 500; // Ajoute 500 au score
+      
+      genere(); // Génère un nouveau pays
+    } else {
+      vies--; // Diminue le nombre de vies
+      message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>"; // Message d'erreur
     }
   } else {
-	switch(continent){
-		case "Nord":
-			score = score*1.2
-			
-	}	  
-    popUp = document.createElement("div");
-    popUp.id = 'gameOver';
-    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>";
-    document.body.appendChild(popUp);
+    message = "<br>Entrée un pays!<br>"; // Message si l'entrée est vide
   }
-  vieAffiche.innerHTML = "Vies: " + vieMessage;
+  
+  lives(); // Met à jour l'affichage des vies
+  var affiche = document.getElementById("score"); // Sélectionne l'élément pour afficher le score
+  affiche.innerHTML = "Score : " + score; // Affiche le score mis à jour
+  
+  document.getElementById("erreurs").innerHTML = message; // Affiche le message d'erreur
+  var textBox = document.getElementById("guess"); // Sélectionne le champ de saisie
+  textBox.value = ""; // Réinitialise le champ de saisie
 }
 
-function indice(){
-  var indice = document.getElementById("myPopup");
-
-  if (nbIndice == 0){
-    indice.innerHTML = "La superficie du pays est de " + tblPays[pays][3] + " km²";
-	score -= 100;
-  }else if(nbIndice == 1){
-    indice.innerHTML = "La capitale du pays c'est " + tblPays[pays][1];
-	  score -= 100;
-  } else if (nbIndice == 2){
-    indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"
+function lives() {
+  var vieAffiche = document.getElementById("vies"); // Sélectionne l'élément pour afficher les vies
+  var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'>"; // HTML pour l'image de vie
+  var vieMessage = ""; // Initialise le message des vies
+  
+  if (vies > 0) { // Vérifie si le joueur a encore des vies
+    for (var i = 0; i < vies; i++) { // Pour chaque vie restante
+      vieMessage += imageHTML; // Ajoute une image de vie au message
+    }
+  } else {
+    switch (continent) { // Vérifie le continent sélectionné
+      case "Nord":
+        score = score * 1.2; // Augmente le score de 20% si le continent est le Nord
+    }	  
+    popUp = document.createElement("div"); // Crée un nouvel élément pour le message de fin de jeu
+    popUp.id = 'gameOver'; // Définit l'ID de l'élément
+    popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>"; // Message de fin de jeu
+    document.body.appendChild(popUp); // Ajoute le message à la page
   }
-  nbIndice += 0.5
-  popup()
+  vieAffiche.innerHTML = "Vies: " + vieMessage; // Affiche le message des vies
 }
 
-function arrete(){
-  vies = 0;
-  lives()
+function indice() {
+  var indice = document.getElementById("myPopup"); // Sélectionne l'élément pour afficher l'indice
+
+  if (nbIndice == 0) { // Vérifie si c'est le premier indice
+    indice.innerHTML = "La superficie du pays est de " + tblPays[pays][3] + " km²"; // Affiche la superficie comme indice
+    score -= 100; // Diminue le score de 100
+  } else if (nbIndice == 1) { // Vérifie si c'est le deuxième indice
+    indice.innerHTML = "La capitale du pays c'est " + tblPays[pays][1]; // Affiche la capitale comme indice
+    score -= 100; // Diminue le score de 100
+  } else if (nbIndice == 2) { // Vérifie si c'est le troisième indice
+    indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"; // Message indiquant qu'il n'y a plus d'indices
+  }
+  nbIndice += 0.5; // Incrémente le nombre d'indices utilisés
+  popup(); // Affiche le popup d'indice
 }
 
+function arrete() {
+  vies = 0; // Met le nombre de vies à 0
+  lives(); // Met à jour l'affichage des vies
+}
 
 function popup() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+  var popup = document.getElementById("myPopup"); // Sélectionne l'élément popup
+  popup.classList.toggle("show"); // Affiche ou masque le popup
 }
 
-function nord(){
-  continent = "Nord";
-  document.getElementById("nord").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "transparent";
-  document.getElementById("asie").style.backgroundColor = "transparent";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
+function nord() {
+  continent = "Nord"; // Définit le continent comme Nord
+  document.getElementById("nord").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le continent Amerique du Nord à un gris pale
+  document.getElementById("sud").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("europe").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("asie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("afrique").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("oceanie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
 }
 
-function sud(){
-  continent = "Sud";
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("europe").style.backgroundColor = "transparent";
-  document.getElementById("asie").style.backgroundColor = "transparent";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
+function sud() {
+  continent = "Sud"; // Définit le continent comme Sud
+  document.getElementById("nord").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("sud").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le continent Amerique du Sud à un gris pale
+  document.getElementById("europe").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("asie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparaet
+  document.getElementById("afrique").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("oceanie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
 }
 
-function afrique(){
-  continent = "Afrique";
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "transparent";
-  document.getElementById("asie").style.backgroundColor = "transparent";
-  document.getElementById("afrique").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
+function afrique() {
+  continent = "Afrique"; // Définit le continent comme Afrique
+  document.getElementById("nord").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("sud").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("europe").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("asie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("afrique").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le continent Afrique à un gris pale
+  document.getElementById("oceanie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
 }
 
-function europe(){
-  continent = "Europe";
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("asie").style.backgroundColor = "transparent";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
+function europe() {
+  continent = "Europe"; // Définit le continent comme Europe
+  document.getElementById("nord").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparant
+  document.getElementById("sud").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("europe").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le continent Europe à un gris pale
+  document.getElementById("asie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("afrique").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("oceanie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
 }
 
-function asie(){
-  continent = "Asie";
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "transparent";
-  document.getElementById("asie").style.backgroundColor = " rgb(24, 114, 139)";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "transparent";
+function asie() {
+  continent = "Asie"; // Définit le continent comme Asie
+  document.getElementById("nord").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("sud").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("europe").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("asie").style.backgroundColor = " rgb(24, 114, 139)";// Change la couleur de fond pour le continent Asie à un gris pale
+  document.getElementById("afrique").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("oceanie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
 }
 
-function oceanie(){
-  continent = "Océanie";
-  document.getElementById("nord").style.backgroundColor = "transparent";
-  document.getElementById("sud").style.backgroundColor = "transparent";
-  document.getElementById("europe").style.backgroundColor = "transparent";
-  document.getElementById("asie").style.backgroundColor = "transparent";
-  document.getElementById("afrique").style.backgroundColor = "transparent";
-  document.getElementById("oceanie").style.backgroundColor = "rgb(24, 114, 139)";
+function oceanie() {
+  continent = "Océanie"; // Définit le continent comme Océanie
+  document.getElementById("nord").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparnt
+  document.getElementById("sud").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("europe").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("asie").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("afrique").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour qu'il est transparent
+  document.getElementById("oceanie").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le continent Océanie à un gris pale
 }
 
-
-function shapes(){
-  typeJeux = 4;
-  document.getElementById("drapeau").style.backgroundColor = "transparent";
-  document.getElementById("silhouette").style.backgroundColor = "rgb(24, 114, 139)";
+function shapes() {
+  typeJeux = 4; // Définit le type de jeu comme formes
+  document.getElementById("drapeau").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour le type de jeu drapeau pour qu'il est transparent
+  document.getElementById("silhouette").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le type de jeu silhouette à un gris pale
 }
 
-function drapeau(){
-  typeJeux = 5;
-  document.getElementById("drapeau").style.backgroundColor = "rgb(24, 114, 139)";
-  document.getElementById("silhouette").style.backgroundColor = "transparent";
+function drapeau() {
+  typeJeux = 5; // Définit le type de jeu comme drapeau
+  document.getElementById("drapeau").style.backgroundColor = "rgb(24, 114, 139)"; // Change la couleur de fond pour le type de jeu drapeau à un gris pale
+  document.getElementById("silhouette").style.backgroundColor = "transparent"; // Réinitialise la couleur de fond pour le type de jeu silhouette pour qu'il est transparent
 }

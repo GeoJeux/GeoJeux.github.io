@@ -292,6 +292,6 @@ img:focus {
     color: black;
   }
   .topnav a.active {
-    background-color: #2O56EO;
+    background-color: rgb(24, 114, 139);
     color: white;
   }

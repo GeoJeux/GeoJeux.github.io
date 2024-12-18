@@ -191,8 +191,10 @@ var typeJeux; // Déclare une variable pour stocker le type de jeu
 function genere() {
   pays = Math.floor(Math.random() * tblPays.length); // Sélectionne un pays au hasard dans le tableau
 
-  if (continent != null) { // Vérifie si un continent a été sélectionné
-    while (tblPays[pays][2] != continent) { // Continue à sélectionner un pays jusqu'à ce qu'il corresponde au continent selectionner
+  // Vérifie si un continent a été sélectionné
+  if (continent != null) { 
+    // Continue à sélectionner un pays jusqu'à ce qu'il corresponde au continent selectionner
+    while (tblPays[pays][2] != continent) { 
       pays = Math.floor(Math.random() * tblPays.length); // Sélectionne un nouveau pays aléatoire
     }
   }
@@ -229,8 +231,9 @@ function jouer() {
 
 function devine() {
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate
-
-  if (essaie != " ") { // Vérifie si l'entrée n'est pas vide
+  
+  // Vérifie si l'entrée n'est pas vide
+  if (essaie != " ") { 
     if (essaie == tblPays[pays][0]) { // Vérifie si la réponse est correcte
       message = "Bravo, vous avez réussit à deviner le bon pays"; // Message de succès
       score += 500; // Ajoute 500 au score
@@ -257,8 +260,9 @@ function lives() {
   var vieAffiche = document.getElementById("vies"); // Sélectionne l'élément pour afficher les vies
   var imageHTML = "<img class='coeur' src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png'>"; // HTML pour l'image de vie
   var vieMessage = ""; // Initialise le message des vies
-  
-  if (vies > 0) { // Vérifie si le joueur a encore des vies
+
+  // Vérifie si le joueur a encore des vies
+  if (vies > 0) { 
     for (var i = 0; i < vies; i++) { // Pour chaque vie restante
       vieMessage += imageHTML; // Ajoute une image de vie au message
     }
@@ -274,13 +278,16 @@ function lives() {
 function indice() {
   var indice = document.getElementById("myPopup"); // Sélectionne l'élément pour afficher l'indice
 
-  if (nbIndice == 0) { // Vérifie si c'est le premier indice
+  if (nbIndice == 0) {
+    // Vérifie si c'est le premier indice
     indice.innerHTML = "La superficie du pays est de " + tblPays[pays][3] + " km²"; // Affiche la superficie comme indice
     score -= 100; // Diminue le score de 100
-  } else if (nbIndice == 1) { // Vérifie si c'est le deuxième indice
+  } else if (nbIndice == 1) { 
+    // Vérifie si c'est le deuxième indice
     indice.innerHTML = "La capitale du pays c'est " + tblPays[pays][1]; // Affiche la capitale comme indice
     score -= 100; // Diminue le score de 100
-  } else if (nbIndice == 2) { // Vérifie si c'est le troisième indice
+  } else if (nbIndice == 2) { 
+    // Vérifie si c'est le troisième indice
     indice.innerHTML = "<br>Vous n'avez plus le droit aux indices.<br>"; // Message indiquant qu'il n'y a plus d'indices
   }
   nbIndice += 0.5; // Incrémente le nombre d'indices utilisés

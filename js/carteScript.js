@@ -270,7 +270,7 @@ function lives() {
   } else {
     switch (continent){
       case "Nord":
-        score = score*1.10;
+        score = score*1.1;
         break;
       case "Sud":
         score = score*1.05;

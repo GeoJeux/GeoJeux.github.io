@@ -1,3 +1,4 @@
+
 /*Tableaux de tout les pays du monde avec leur superficie, image de leur drapeau et un image de leur silhouette*/
 var tblPays = [
   ["AFGHANISTAN", "Kaboul", "Asie", 652230, "<img src='images/Afghanistan.png' class='image'>", "<img src='images/Drapeau/Afghanistand.png' class='image'>"],

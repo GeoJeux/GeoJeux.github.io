@@ -1,8 +1,9 @@
-var tblCountries
-var carteAfficher
+var tblCountries //Variable qui stocke quelles noms de pays a utiliser 
+var carteAfficher //Variable qui stocke quelle continent a afficher
 var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","EL-SALVADOR","NICARAGUA","COSTA-RICA","PANAMA","CUBA","BAHAMAS","JAMAÏQUE",
 			"HAÏTI","RÉPUBLIQUE-DOMINICAINE","PORTO-RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES",
 			"ANTIGUA-ET-BARBUDA","DOMINIQUE"];
+
 var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' onclick = 'setAnswer()'> \
 			 <img src = 'images/Canada.png' id='CANADA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Mexique.png' id='MEXIQUE' onclick = 'setAnswer()'> \
@@ -109,85 +110,96 @@ var europeNoms = ["ALBANIE", "ALLEMAGNE", "ANDORRE", "ARMÉNIE", "AUTRICHE", "AZ
                   "IRLANDE", "ISLANDE", "ITALIE", "KOSOVO", "LETTONIE", "LIECHTENSTEIN", "LITUANIE", "LUXEMBOURG", "MACÉDOINE", "MALTE", 
                   "MOLDAVIE", "MONACO", "MONTÉNÉGRO", "NORVÈGE", "PAYS-BAS", "POLOGNE", "PORTUGAL", "ROUMANIE", "ROYAUME-UNI", "RUSSIE", 
                   "SAINT-MARIN", "SERBIE", "SLOVAQUIE", "SLOVÉNIE","SUÈDE", "SUISSE", "TCHÉQUI", "TURQUIE", "UKRAINE"]
-var carteEurope 
-var asieNoms
-var carteAsie
-var oceanieNoms
-var carteOceanie
+// Déclaration des variables pour les cartes et les noms des pays
+var carteEurope; // Carte de l'Europe
+var asieNoms; // Noms des pays d'Asie
+var carteAsie; // Carte de l'Asie
+var oceanieNoms; // Noms des pays d'Océanie
+var carteOceanie; // Carte de l'Océanie
 
-var lives = 3;
-var paysNom;
-var answer;
-var score = 0;
-var continent;
+// Initialisation des vies, nom du pays, réponse, score et continent
+var lives = 3; // Nombre de vies du joueur
+var paysNom; // Nom du pays à deviner
+var answer; // Réponse donnée par le joueur
+var score = 0; // Score du joueur
+var continent; // Continent sélectionné
 
+// Fonction pour définir le continent sélectionné
 function setContinent() {
-	continent = event.target.value;
+	continent = event.target.value; // Récupération de la valeur du continent sélectionné
 	switch (continent) {
 	  case "ameriqueNord":
-		  tblCountries = ameriqueNordNoms;
-		  carteAfficher = carteAmeriqueNord;
+		  tblCountries = ameriqueNordNoms; // Assignation des noms de pays d'Amérique du Nord
+		  carteAfficher = carteAmeriqueNord; // Assignation de la carte d'Amérique du Nord
 		  break;
 	  case "ameriqueSud":
-		  tblCountries = ameriqueSudNoms;
-		  carteAfficher = carteAmeriqueSud;
+		  tblCountries = ameriqueSudNoms; // Assignation des noms de pays d'Amérique du Sud
+		  carteAfficher = carteAmeriqueSud; // Assignation de la carte d'Amérique du Sud
 		  break;
 	  case "afrique":
-		  tblCountries = afriqueNoms
-		  carteAfficher = carteAfrique;
+		  tblCountries = afriqueNoms; // Assignation des noms de pays d'Afrique
+		  carteAfficher = carteAfrique; // Assignation de la carte d'Afrique
 		  break;
 	  case "europe":
-		  tblCountries = europeNoms
-		  carteAfficher = carteEurope;
+		  tblCountries = europeNoms; // Assignation des noms de pays d'Europe
+		  carteAfficher = carteEurope; // Assignation de la carte d'Europe
 		  break;
 	  case "asie":
-		  tblCountries = asieNoms;
-		  carteAfficher = carteAsie;
+		  tblCountries = asieNoms; // Assignation des noms de pays d'Asie
+		  carteAfficher = carteAsie; // Assignation de la carte d'Asie
 		  break;
 	  case "oceanie":
-		  tblCountries = oceanieNoms;
-		  carteAfficher = carteOceanie;
+		  tblCountries = oceanieNoms; // Assignation des noms de pays d'Océanie
+		  carteAfficher = carteOceanie; // Assignation de la carte d'Océanie
   }
 }
 
+// Fonction pour afficher un nom de pays aléatoire
 function affichePaysNom() {
-  paysNom = tblCountries[Math.floor(Math.random()*tblCountries.length)]
+  paysNom = tblCountries[Math.floor(Math.random()*tblCountries.length)]; // Sélection aléatoire d'un pays
 }
 
-
+// Fonction pour définir la réponse donnée par le joueur
 function setAnswer() {
-	answer = event.target.id;
+	answer = event.target.id; // Récupération de l'identifiant de l'élément cliqué
 }
 
+// Fonction pour vérifier la réponse du joueur
 function verifyAnswer() {
-  if (answer == paysNom) {
-    score = score + 500
+  if (answer == paysNom) { // Vérification si la réponse est correcte
+    score = score + 500; // Ajout de points au score
   } else {
-    lives--
+    lives--; // Décrémentation des vies si la réponse est incorrecte
   }
-  if (lives == 0) {
-	  endGame()
+  if (lives == 0) { // Vérification si le joueur n'a plus de vies
+	  endGame(); // Appel de la fonction pour terminer le jeu
   } else {
-	  jouerPointeur()
+	  jouerPointeur(); // Appel de la fonction pour continuer le jeu
   }
   
-  answer = "";
+  answer = ""; // Réinitialisation de la réponse
 }
+
+// Fonction pour terminer le jeu
 function endGame() {
-	var affiche = document.getElementById("jeux");
+	var affiche = document.getElementById("jeux"); // Récupération de l'élément pour afficher le score
 	affiche.innerHTML = "<h2>Votre score est:<br> " + score + "</h2><br> \
 			     <input id = 'btnjouer' type='button' value='Rejouer' onclick='reJouerPointeur()'> \
-			     <div class = 'emptySpace'></div>"
+			     <div class = 'emptySpace'></div>"; // Affichage du score et bouton pour rejouer
 }
+
+// Fonction pour afficher le nom du pays et les informations du jeu
 function jouerPointeur() {
-  var affiche = document.getElementById("jeux");
-    affichePaysNom();
-    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"
+  var affiche = document.getElementById("jeux"); // Récupération de l'élément pour afficher le jeu
+    affichePaysNom(); // Appel de la fonction pour afficher un nom de pays
+    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"; // Affichage du pays, score et vies
 }
+
+// Fonction pour recommencer le jeu
 function reJouerPointeur() {
-	lives = 3;
-	score = 0;
-  var affiche = document.getElementById("jeux");
-    affichePaysNom();
-    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"
+	lives = 3; // Réinitialisation des vies
+	score = 0; // Réinitialisation du score
+  var affiche = document.getElementById("jeux"); // Récupération de l'élément pour afficher le jeu
+    affichePaysNom(); // Appel de la fonction pour afficher un nom de pays
+    affiche.innerHTML = "<h2>"+paysNom+"</h2><br><h3>Score: "+score+"   Vies: "+lives+"</h3><input type='button' value='Vérifier Réponse' onclick='verifyAnswer()'><br><div class = 'grid-container'>"+carteAfficher+"</div>"; // Affichage du pays, score et vies
 }

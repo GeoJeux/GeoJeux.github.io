@@ -208,7 +208,7 @@ function genere() {
 function jouer() {
   var message = "<div id='topLine'><div id='vies'></div><div id='score'></div>\
     <div id='stop'><input type='button' value='Arrêter' onclick='arrete()'></div></div>\
-    <center><div id='carte' class='carte'></div></center>\
+    <center><div class='carte'></div></center>\
     <div class='emptySpace'></div>\
     <div>\
       <input type='text' id='guess'>\
@@ -221,7 +221,7 @@ function jouer() {
   var affiche = document.getElementById("jeux"); // Sélectionne l'élément avec le ID 'jeux'
   affiche.innerHTML = message; /* Affiche le message dans l'élément 'jeux' */
 
-  document.getElementById("carte").focus(); // Met le focus sur le champ de saisie
+  document.getElementById("guess").focus(); // Met le focus sur le champ de saisie
 
   var affiche = document.getElementById("score"); // Sélectionne l'élément pour afficher le score
   affiche.innerHTML = "Score : " + score; // Affiche le score actuel

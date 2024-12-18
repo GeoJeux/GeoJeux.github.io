@@ -1,40 +1,42 @@
+
+ Copy code
 <!DOCTYPE html>
 <html>
 
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width"> <!-- Assure une bonne mise en page sur les appareils mobiles -->
     <link rel="icon" type="image/x-icon" href="images/Logo.png"> <!-- Image du logo dans la barre de navigation -->
-    <title>Jeux Carte</title>
-    <link href="Css/stylejeuxpointeur.css" rel="stylesheet" type="text/css" />
+    <title>Jeux Carte</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <link href="Css/stylejeuxpointeur.css" rel="stylesheet" type="text/css" /> <!-- Lien vers la feuille de style CSS -->
   </head>
   <body>
-    <script src="js/scriptjeuxpointeur.js"></script>
+    <script src="js/scriptjeuxpointeur.js"></script> <!-- Lien vers le fichier JavaScript pour les fonctionnalités du jeu -->
 
-     <div class="topnav">
-        <a href="index.html">Accueil</a>
-        <a href="carte.html">Devinette</a>
-        <a class="active" href="jeuxpointeur.html">Carte</a>
-        <a href="questionnaire.html">Capitale<a/>
-        <a  href="index.html"><img style="float:right;" src="images/Logo.png" height="20px"></a>
+     <div class="topnav"> <!-- Barre de navigation en haut de la page -->
+        <a href="index.html">Accueil</a> <!-- Lien vers la page d'accueil -->
+        <a href="carte.html">Devinette</a> <!-- Lien vers la page de devinette -->
+        <a class="active" href="jeuxpointeur.html">Carte</a> <!-- Lien vers la page actuelle, avec une classe active pour le style -->
+        <a href="questionnaire.html">Capitale</a> <!-- Lien vers la page de questionnaire -->
+        <a href="index.html"><img style="float:right;" src="images/Logo.png" height="20px"></a> <!-- Logo à droite dans la barre de navigation -->
      </div>
-     <div class="title">
-       <h1>Carte</h1>
+     <div class="title"> <!-- Section titre de la page -->
+       <h1>Carte</h1> <!-- Titre principal de la page -->
      </div>
-    <div class="emptySpace"></div>
-    <div id="jeux">
-      <div class="emptySpace"></div>
-      <h2 style="color:white">Instructions</h2>
+    <div class="emptySpace"></div> <!-- Espace vide  -->
+    <div id="jeux"> <!-- Section principale du jeu -->
+      <div class="emptySpace"></div> <!-- Espace vide -->
+      <h2 style="color:white">Instructions</h2> <!-- Sous-titre pour les instructions -->
       <p style="color:white;">Bonjour, bien venu au jeu pointeur!<br>- Sélectionner le continent que vous voulez<br>
                               - Trouver le pays sur la carte qui correspond au pays qui t'a été donné<br>
-                              - Pèse le boutton jouer pour commencer le jeux</p>
-      <div id = "btnChoixContinentDiv" class="emptySpace">
-        <button class = "btnChoixContinent" value = "ameriqueNord" onclick = "setContinent()">Amérique du Nord</button> <br>
-        <p style="color: red;">Autres continents à venir!</p>
+                              - Pèse le boutton jouer pour commencer le jeux</p> <!-- Instructions pour le joueur -->
+      <div id="btnChoixContinentDiv" class="emptySpace"> <!-- Div pour les boutons de choix de continent -->
+        <button class="btnChoixContinent" value="ameriqueNord" onclick="setContinent()">Amérique du Nord</button> <br> <!-- Bouton pour sélectionner l'Amérique du Nord -->
+        <p style="color: red;">Autres continents à venir!</p> <!-- Message indiquant que d'autres continents seront ajoutés -->
       </div>
-      <input id = "btnjouer" type="button" value="Jouer" onclick="jouerPointeur()">
-      <div class="emptySpace"></div>
+      <input id="btnjouer" type="button" value="Jouer" onclick="jouerPointeur()"> <!-- Bouton pour commencer le jeu -->
+      <div class="emptySpace"></div> <!-- Espace vide  -->
     </div>
-    <div class="emptySpace"></div>
+    <div class="emptySpace"></div> <!-- Espace vide  -->
   </body>
 </html>

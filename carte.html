@@ -4,27 +4,27 @@
 <head>
   <meta charset="utf-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
   <meta name="viewport" content="width=device-width"> <!-- Assure une mise en page responsive -->
-  <title>Cartes</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+  <title>Cartes</title> <!-- Titre de la page  -->
   <link href="carteStyle.css" rel="stylesheet" type="text/css" /> <!-- Lien vers la feuille de style CSS -->
 </head>
 
 <body>
-    <div class="topnav"> <!-- Barre de navigation supérieure -->
+    <div class="topnav"> <!-- Barre de navigation  -->
         <a href="index.html">Accueil</a> <!-- Lien vers la page d'accueil -->
-        <a class="active" href="carte.html">Devinette</a> <!-- Lien vers la page de devinette, actuellement actif -->
+        <a class="active" href="carte.html">Devinette</a> <!-- Lien vers la page de devinette -->
         <a href="jeuxpointeur.html">Carte</a> <!-- Lien vers la page de carte -->
-        <a href="questionnaire.html">Capitale</a> <!-- Lien vers la page de questionnaire -->
+        <a href="questionnaire.html">Capitale</a> <!-- Lien vers la page de questionnaire de capitale -->
     </div>
   <center>
-  <script src="carteScript.js"></script> <!-- Inclusion du script JavaScript pour la fonctionnalité de la carte -->
+  <script src="carteScript.js"></script> <!-- Lien vers le JavaScript -->
 
   <div class="title"> <!-- Section de titre -->
     <h1>Drapeau</h1> <!-- Titre principal de la page -->
   </div>
-  <div class="emptySpace"></div> <!-- Espace vide pour le style -->
+  <div class="emptySpace"></div> <!-- Espace vide  -->
 
   <div id="jeux"> <!-- Section principale pour le jeu -->
-    <div class="emptySpace"></div> <!-- Espace vide pour le style -->
+    <div class="emptySpace"></div> <!-- Espace vide  -->
     <h2 style="color:white">Instruction</h2> <!-- Sous-titre pour les instructions -->
     <p style="color:white">Bienvenue au jeu de devinette! <br> <br>
 	Ce jeu est à deux mode: <br> <br>
@@ -36,59 +36,59 @@
     	Vous avez seulement 2 indices par pays. Le premier indice c'est la superficie du pays et le deuxième indice c'est sa capitale.<br><br>
 	<i><b>Les continents:</b></i><br><br>
     	C'est optionnel, mais si vous voulez vous pouvez selectionner un seul continent. Si vous ne selectionner aucun continent vous aller devniez tout les pays au monde. Chaque continent à un multiplicateur de score différent.</p> <!-- Texte d'instruction -->
-    <div class="emptySpace"></div> <!-- Espace vide pour le style -->
+    <div class="emptySpace"></div> <!-- Espace vide  -->
     
     <p style="color:white">Sélectionne un style de jeux:</p> <!-- Demande à l'utilisateur de choisir un style de jeu -->
     <div class="buttonContainer1"> <!-- Conteneur pour les boutons de sélection de style -->
       <div class="buttonSelect1" id="drapeau"> <!-- Bouton pour le style "Drapeau" -->
-        <input type="button" class="buttonMargin" value="Drapeau" onclick="drapeau()"> <!-- Bouton qui appelle la fonction drapeau() -->
+        <input type="button" class="buttonMargin" value="Drapeau" onclick="drapeau()"> <!-- Bouton qui appelle la fonction drapeau -->
       </div>
-      <div class="buttonSelect1" id="silhouette"> <!-- Bouton pour le style "Silhouette" -->
-        <input type="button" class="buttonMargin" value="Silhouette" onclick="shapes()"> <!-- Bouton qui appelle la fonction shapes() -->
+      <div class="buttonSelect1" id="silhouette"> <!-- Bouton pour le style Silhouette -->
+        <input type="button" class="buttonMargin" value="Silhouette" onclick="shapes()"> <!-- Bouton qui appelle la fonction shapes -->
       </div>
     </div>
     
     <p style="color:white">Sélectionne un continent:</p> <!-- Demande à l'utilisateur de choisir un continent -->
     
-    <div class="buttonContainer2"> <!-- Conteneur pour les boutons de sélection de continent -->
+    <div class="buttonContainer2"> <!-- Div pour les boutons de sélection de continent -->
       
       <div class="buttonSelect2" id="nord"> <!-- Bouton pour le continent "Amérique du Nord" -->
-        <input class="buttonMargin" type="button" value="Amérique du Nord" onclick="nord()"><br> <!-- Bouton qui appelle la fonction nord() -->
-		<img class="imageCon" src="images/Nord.png" onclick="nord()">  <!-- Image qui appelle la fonction nord() -->
+        <input class="buttonMargin" type="button" value="Amérique du Nord" onclick="nord()"><br> <!-- Bouton qui appelle la fonction nord -->
+		<img class="imageCon" src="images/Nord.png" onclick="nord()">  <!-- Image qui appelle la fonction nord -->
       </div>
       
       <div class="buttonSelect2" id="sud"> <!-- Bouton pour le continent "Amérique du Sud" -->
-        <input class="buttonMargin" type="button" value="Amérique du Sud" onclick="sud()"><br> <!-- Bouton qui appelle la fonction sud() -->
-		<img class="imageCon" src="images/Sud.png" onclick="sud()"> <!-- Image qui appelle la fonction sud() -->
+        <input class="buttonMargin" type="button" value="Amérique du Sud" onclick="sud()"><br> <!-- Bouton qui appelle la fonction sud -->
+		<img class="imageCon" src="images/Sud.png" onclick="sud()"> <!-- Image qui appelle la fonction sud -->
       </div>
       
       <div class="buttonSelect2" id="europe"> <!-- Bouton pour le continent "Europe" -->
-        <input class="buttonMargin" type="button" value="Europe" onclick="europe()"><br> <!-- Bouton qui appelle la fonction europe() -->
-		<img class="imageCon" src="images/Europe.png" onclick="europe()"> <!-- Image qui appelle la fonction europe() -->
+        <input class="buttonMargin" type="button" value="Europe" onclick="europe()"><br> <!-- Bouton qui appelle la fonction europe -->
+		<img class="imageCon" src="images/Europe.png" onclick="europe()"> <!-- Image qui appelle la fonction europe -->
       </div>
       
       <div class="buttonSelect2" id="asie"> <!-- Bouton pour le continent "Asie" -->
-        <input class="buttonMargin" type="button" value="Asie" onclick="asie()"><br> <!-- Bouton qui appelle la fonction asie() -->
-		<img class="imageCon" src="images/Asie.png" onclick="asie()"> <!-- Image qui appelle la fonction asie() -->
+        <input class="buttonMargin" type="button" value="Asie" onclick="asie()"><br> <!-- Bouton qui appelle la fonction asie -->
+		<img class="imageCon" src="images/Asie.png" onclick="asie()"> <!-- Image qui appelle la fonction asie -->
       </div>
       
       <div class="buttonSelect2" id="afrique"> <!-- Bouton pour le continent "Afrique" -->
-        <input class="buttonMargin" type="button" value="Afrique" onclick="afrique()"><br> <!-- Bouton qui appelle la fonction afrique() -->
-		<img class="imageCon" src="images/Afrique.png" onclick="afrique()"> <!-- Image qui appelle la fonction afrique() -->
+        <input class="buttonMargin" type="button" value="Afrique" onclick="afrique()"><br> <!-- Bouton qui appelle la fonction afrique -->
+		<img class="imageCon" src="images/Afrique.png" onclick="afrique()"> <!-- Image qui appelle la fonction afrique -->
       </div>
       
       <div class="buttonSelect2" id="oceanie"> <!-- Bouton pour le continent "Océanie" -->
-        <input class="buttonMargin" type="button" value="Océanie" onclick="oceanie()"><br> <!-- Bouton qui appelle la fonction oceanie() -->
-		<img class="imageCon" src="images/Oceanie.png" onclick="oceanie()"> <!-- Image qui appelle la fonction oceanie() -->
+        <input class="buttonMargin" type="button" value="Océanie" onclick="oceanie()"><br> <!-- Bouton qui appelle la fonction oceanie -->
+		<img class="imageCon" src="images/Oceanie.png" onclick="oceanie()"> <!-- Image qui appelle la fonction oceanie -->
       </div>
     </div>
     
 	<br><br> <!-- Espacement entre les éléments -->
       
-    <input type="button" value="Jouer" onclick="jouer()"> <!-- Bouton pour commencer le jeu qui appelle la fonction jouer() -->
-    <div class="emptySpace"></div> <!-- Espace vide pour le style -->
+    <input type="button" value="Jouer" onclick="jouer()"> <!-- Bouton pour commencer le jeu qui appelle la fonction jouer -->
+    <div class="emptySpace"></div> <!-- Espace vide  -->
   </div>
-  <div class="emptySpace"></div> <!-- Espace vide pour le style -->
+  <div class="emptySpace"></div> <!-- Espace vide  -->
   </center>
 </body>
 

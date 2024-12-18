@@ -268,6 +268,26 @@ function lives() {
       vieMessage += imageHTML; // Ajoute une image de vie au message
     }
   } else {
+    switch (continent){
+      case "Nord":
+        score = score*1.10;
+        break;
+      case "Sud":
+        score = score*1.05;
+        break;
+      case "Europe":
+        score = score*1.07;
+        break;
+      case "Asie":
+        score = score*1.15;
+        break;
+      case "Océanie":
+        score = score*1.17;
+        break;
+      default:
+        score = score*1.2;
+        break;
+    }
     popUp = document.createElement("div"); // Crée un nouvel élément pour le message de fin de jeu
     popUp.id = 'gameOver'; // Définit l'ID de l'élément
     popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>"; // Message de fin de jeu

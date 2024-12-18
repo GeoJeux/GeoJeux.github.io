@@ -221,3 +221,10 @@ body{
 	width: 120px;
 	border-radius: 15px;
 }
+
+#instruction{
+	padding:5px;
+	margin-left:10px;
+	margin-right:10px;
+}
+

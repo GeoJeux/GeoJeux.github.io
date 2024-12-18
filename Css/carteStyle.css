@@ -1,236 +1,243 @@
- /*CSS Barre de navigation*/
-  .topnav {
-    background-color:#6c8593;
-    overflow: hidden;
-    top: 0;
-    width: 100%;
-    font-family: monospace;
-  }
-  .topnav a {
-    float: left;
-    color: #fdfdfd;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .topnav a.active {
-    background-color: rgb(24, 114, 139);
-    color: white;
-  }
+
+/* CSS Barre de navigation */
+.topnav {
+    background-color: #6c8593; /* Couleur de fond de la barre de navigation */
+    overflow: hidden; /* Empêche le débordement du contenu */
+    top: 0; /* Positionne la barre en haut de la page */
+    width: 100%; /* Prend toute la largeur de la page */
+    font-family: monospace; /* Définit la police de la barre de navigation */
+}
+
+.topnav a {
+    float: left; /* Aligne les liens à gauche */
+    color: #fdfdfd; /* Couleur du texte des liens */
+    text-align: center; /* Centre le texte des liens */
+    padding: 14px 16px; /* Ajoute de l'espace autour du texte */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-size: 17px; /* Définit la taille de la police des liens */
+}
+
+.topnav a:hover {
+    background-color: #ddd; /* Change la couleur de fond au survol */
+    color: black; /* Change la couleur du texte au survol */
+}
+
+.topnav a.active {
+    background-color: rgb(24, 114, 139); /* Couleur de fond pour le lien actif */
+    color: white; /* Couleur du texte pour le lien actif */
+}
 
 html {
-  height: 100%;
-  width: 100%;
-}
-body{
-	
-  background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  text-align:center;
-  justify-content: center; /* Centers child elements horizontally */
-  align-items: center; /* Centers child elements vertically */
+    height: 100%; /* Définit la hauteur de l'élément html à 100% */
+    width: 100%; /* Définit la largeur de l'élément html à 100% */
 }
 
-.carte{
-  width: 65%;
-  height: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color:#c0c0c0;
-  overflow:hidden;
-  padding: 10px;
-  border: solid, 5px, rgb(24, 114, 139);
-  border-radius: 5px;
-  display: block;
-}
-.image{
-  margin-left: auto;
-  margin-right: auto;
-  height: 250px;
-  border-radius:10px;
+body {
+    background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85'); /* Image de fond */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-attachment: fixed; /* Fixe l'image de fond lors du défilement */
+    background-size: cover; /* Couvre toute la zone du corps */
+    text-align: center; /* Centre le texte dans le corps */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    align-items: center; /* Centre les éléments enfants verticalement */
 }
 
-.emptySpace{
-  height: 100px;
-  width: 100%;
+.carte {
+    width: 65%; /* Définit la largeur de la carte */
+    height: 250px; /* Définit la hauteur de la carte */
+    margin-left: auto; /* Centre la carte horizontalement */
+    margin-right: auto; /* Centre la carte horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur de la carte */
+    background-color: #c0c0c0; /* Couleur de fond de la carte */
+    overflow: hidden; /* Cache le contenu débordant */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur de la carte */
+    border: solid 5px rgb(24, 114, 139); /* Bordure solide autour de la carte */
+    border-radius: 5px; /* Arrondit les coins de la carte */
+    display: block; /* Affiche la carte comme un bloc */
 }
 
-.title{
-  width: 40%;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 10px;
-  text-align: center;
-  color:white;
-  background-color:rgb(32 182 224);
-  overflow:hidden; 
-  padding: 10px; 
-  border: solid, 3px,  rgb(24, 114, 139);  
-  border-radius: 20px;
+.image {
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto; /* Centre l'image horizontalement */
+    height: 250px; /* Définit la hauteur de l'image */
+    border-radius: 10px; /* Arrondit les coins de l'image */
 }
 
-#jeux{
-  background-color:rgb(32 182 224);
-  width: 80%;
-  border-radius: 30px;
-  margin-right: auto ;
-  margin-left:auto;
-  text-align: center;
-  border: solid, 3px,  rgb(24, 114, 139); 
+.emptySpace {
+    height: 100px; /* Définit la hauteur de l'espace vide */
+    width: 100%; /* Prend toute la largeur de l'espace vide */
 }
 
-#vies{
-  text-align: right;
-  width:300px;
-  height:20px;
-  overflow: hidden;
-  float: right;
-  padding: 20px;
-  margin-right: 20px;
+.title {
+    width: 40%; /* Définit la largeur du titre */
+    height: auto; /* Hauteur automatique pour le titre */
+    margin-right: auto; /* Centre le titre horizontalement */
+    margin-left: auto; /* Centre le titre horizontalement */
+    margin-top: 10px; /* Ajoute un espace au-dessus du titre */
+    text-align: center; /* Centre le texte du titre */
+    color: white; /* Couleur du texte du titre */
+    background-color: rgb(32, 182, 224); /* Couleur de fond du titre */
+    overflow: hidden; /* Cache le contenu débordant du titre */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du titre */
+    border: solid 3px rgb(24, 114, 139); /* Bordure solide autour du titre */
+    border-radius: 20px; /* Arrondit les coins du titre */
 }
 
-#indice{
-  text-align: center;
-  width:10%;
-  margin-right:80%;
-  margin-left:10%;
+#jeux {
+    background-color: rgb(32, 182, 224); /* Couleur de fond pour la section jeux */
+    width: 80%; /* Définit la largeur de la section jeux */
+    border-radius: 30px; /* Arrondit les coins de la section jeux */
+    margin-right: auto; /* Centre la section jeux horizontalement */
+    margin-left: auto; /* Centre la section jeux horizontalement */
+    text-align: center; /* Centre le texte dans la section jeux */
+    border: solid 3px rgb(24, 114, 139); /* Bordure solide autour de la section jeux */
 }
 
-#gameOver{
-  z-index: 1;
-  position: absolute ;
-  width: 74%;
-  height: 74%;
-  top:40%;
-  bottom:40%;
-  left:13%;
-  right:13%;
-  font-size:3em;
-  text-align: center;
-  border: solid, 5px, black;
-  background-color: rgb(24, 114, 139);
-  color: white;
+#vies {
+    text-align: right; /* Aligne le texte à droite */
+    width: 300px; /* Définit la largeur de la section vies */
+    height: 20px; /* Définit la hauteur de la section vies */
+    overflow: hidden; /* Cache le contenu débordant de la section vies */
+    float: right; /* Aligne la section vies à droite */
+    padding: 20px; /* Ajoute de l'espace à l'intérieur de la section vies */
+    margin-right: 20px; /* Ajoute un espace à droite de la section vies */
 }
+
+#indice {
+    text-align: center; /* Centre le texte dans la section indice */
+    width: 10%; /* Définit la largeur de la section indice */
+    margin-right: 80%; /* Ajoute un espace à droite de la section indice */
+    margin-left: 10%; /* Ajoute un espace à gauche de la section indice */
+}
+
+#gameOver {
+    z-index: 1; /* Définit l'ordre d'empilement de l'élément */
+    position: absolute; /* Positionne l'élément de manière absolue */
+    width: 74%; /* Définit la largeur de la section game over */
+    height: 74%; /* Définit la hauteur de la section game over */
+    top: 40%; /* Positionne l'élément à 40% du haut */
+    bottom: 40%; /* Positionne l'élément à 40% du bas */
+    left: 13%; /* Positionne l'élément à 13% de la gauche */
+    right: 13%; /* Positionne l'élément à 13% de la droite */
+    font-size: 3em; /* Définit la taille de la police */
+    text-align: center; /* Centre le texte dans la section game over */
+    border: solid 5px black; /* Bordure solide autour de la section game over */
+    background-color: rgb(24, 114, 139); /* Couleur de fond de la section game over */
+    color: white; /* Couleur du texte de la section game over */
+}
+
 .buttonContainer2 {
-  display: flex; 
-  justify-content: center; 
-  margin-inline: auto; 
-  padding: 10px;
-  width: 90%;
-  height: 220px;
-  border: solid, 3px,  rgb(24, 114, 139); 
-  border-radius: 15px;
-  margin-bottom: 10px;
+    display: flex; /* Utilise le modèle flex pour l'affichage */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    margin-inline: auto; /* Centre la conteneur horizontalement */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du conteneur */
+    width: 90%; /* Définit la largeur du conteneur */
+    height: 220px; /* Définit la hauteur du conteneur */
+    border: solid 3px rgb(24, 114, 139); /* Bordure solide autour du conteneur */
+    border-radius: 15px; /* Arrondit les coins du conteneur */
+    margin-bottom: 10px; /* Ajoute un espace en bas du conteneur */
 }
+
 .buttonContainer1 {
-  display: flex; 
-  justify-content: center; 
-  margin-inline: auto; 
-  padding: 10px;
-  width: 90%;
-  height: 70px;
-  border: solid, 3px,  rgb(24, 114, 139); 
-  border-radius: 15px;
-  margin-bottom: 10px;
+    display: flex; /* Utilise le modèle flex pour l'affichage */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    margin-inline: auto; /* Centre la conteneur horizontalement */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du conteneur */
+    width: 90%; /* Définit la largeur du conteneur */
+    height: 70px; /* Définit la hauteur du conteneur */
+    border: solid 3px rgb(24, 114, 139); /* Bordure solide autour du conteneur */
+    border-radius: 15px; /* Arrondit les coins du conteneur */
+    margin-bottom: 10px; /* Ajoute un espace en bas du conteneur */
 }
 
-.buttonMargin{
-  margin-inline: 25px;
-  width: 120px;
-  background-color: inherit;
-  border-radius: 10px;
-  border: solid, 2px,white;
-  color: white;
-  height:40px;
+.buttonMargin {
+    margin-inline: 25px; /* Ajoute un espace horizontal autour du bouton */
+    width: 120px; /* Définit la largeur du bouton */
+    background-color: inherit; /* Prend la couleur de fond héritée */
+    border-radius: 10px; /* Arrondit les coins du bouton */
+    border: solid 2px white; /* Bordure solide autour du bouton */
+    color: white; /* Couleur du texte du bouton */
+    height: 40px; /* Définit la hauteur du bouton */
 }
 
-.coeur{
-  height:20px;
+.coeur {
+    height: 20px; /* Définit la hauteur de l'élément coeur */
 }
 
-#score{
-  text-align: center;
-  width:200px;
-  height:20px;
-  overflow: hidden;
-  position: absolute;
-  top: 300px;
-  left: 600px;
-  
+#score {
+    text-align: center; /* Centre le texte dans la section score */
+    width: 200px; /* Définit la largeur de la section score */
+    height: 20px; /* Définit la hauteur de la section score */
+    overflow: hidden; /* Cache le contenu débordant de la section score */
+    position: absolute; /* Positionne l'élément de manière absolue */
+    top: 300px; /* Positionne l'élément à 300px du haut */
+    left: 600px; /* Positionne l'élément à 600px de la gauche */
 }
 
 .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  user-select: none;
+    position: relative; /* Positionne l'élément de manière relative */
+    display: inline-block; /* Affiche l'élément en ligne */
+    cursor: pointer; /* Change le curseur au survol */
+    user-select: none; /* Empêche la sélection de texte */
 }
 
 .popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 40px;
-  left:-20px;
+    visibility: hidden; /* Cache le texte de la popup par défaut */
+    width: 160px; /* Définit la largeur du texte de la popup */
+    background-color: #555; /* Couleur de fond de la popup */
+    color: #fff; /* Couleur du texte de la popup */
+    text-align: center; /* Centre le texte dans la popup */
+    border-radius: 6px; /* Arrondit les coins de la popup */
+    padding: 8px 0; /* Ajoute de l'espace à l'intérieur de la popup */
+    position: absolute; /* Positionne l'élément de manière absolue */
+    z-index: 1; /* Définit l'ordre d'empilement de l'élément */
+    bottom: 40px; /* Positionne l'élément à 40px du bas */
+    left: -20px; /* Positionne l'élément à 20px de la gauche */
 }
 
 .popup .show {
-  visibility: visible;
+    visibility: visible; /* Rend le texte de la popup visible */
 }
 
-.buttonSelect1{
-  padding-top: 14px;
-  height:57.5px;
-  text-align: center;
-  border-radius: 10px;
+.buttonSelect1 {
+    padding-top: 14px; /* Ajoute de l'espace en haut du bouton */
+    height: 57.5px; /* Définit la hauteur du bouton */
+    text-align: center; /* Centre le texte dans le bouton */
+    border-radius: 10px; /* Arrondit les coins du bouton */
 }
 
-.buttonSelect2{
-  padding-top: 14px;
-  height:210px;
-  text-align: center;
-  border-radius: 10px;
+.buttonSelect2 {
+    padding-top: 14px; /* Ajoute de l'espace en haut du bouton */
+    height: 210px; /* Définit la hauteur du bouton */
+    text-align: center; /* Centre le texte dans le bouton */
+    border-radius: 10px; /* Arrondit les coins du bouton */
 }
 
-#stop{
-  text-align: center;
-  float: left;
-  width:40px;
-  margin-left: 100px;
-  height: 40px;
-  margin-top:20px;
+#stop {
+    text-align: center; /* Centre le texte dans la section stop */
+    float: left; /* Aligne la section stop à gauche */
+    width: 40px; /* Définit la largeur de la section stop */
+    margin-left: 100px; /* Ajoute un espace à gauche de la section stop */
+    height: 40px; /* Définit la hauteur de la section stop */
+    margin-top: 20px; /* Ajoute un espace en haut de la section stop */
 }
 
-.imageCon{
-	height:150px;
-	width: 120px;
-	border-radius: 15px;
+.imageCon {
+    height: 150px; /* Définit la hauteur de l'image contenue */
+    width: 120px; /* Définit la largeur de l'image contenue */
+    border-radius: 15px; /* Arrondit les coins de l'image contenue */
 }
 
-#instruction{
-	padding: 5px;
-	margin-left: 10px;
-	margin-right: 10px;
+#instruction {
+    padding: 5px; /* Ajoute de l'espace à l'intérieur de la section instruction */
+    margin-left: 10px; /* Ajoute un espace à gauche de la section instruction */
+    margin-right: 10px; /* Ajoute un espace à droite de la section instruction */
 }
 
-#instruction{
-	 padding:20px;
-	 margin-left: auto;
-	 margin-right:auto;
-	 width: 70%;
- }
+#instruction {
+    padding: 20px; /* Ajoute de l'espace à l'intérieur de la section instruction */
+    margin-left: auto; /* Centre la section instruction horizontalement */
+    margin-right: auto; /* Centre la section instruction horizontalement */
+    width: 70%; /* Définit la largeur de la section instruction */
+}
+

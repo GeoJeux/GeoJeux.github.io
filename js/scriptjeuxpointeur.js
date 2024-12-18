@@ -3,7 +3,7 @@ var carteAfficher //Variable qui stocke quelle continent a afficher
 var ameriqueNordNoms = ["CANADA", "ÉTATS-UNIS","MEXIQUE","GUATEMALA","BELIZE","HONDURAS","EL-SALVADOR","NICARAGUA","COSTA-RICA","PANAMA","CUBA","BAHAMAS","JAMAÏQUE",
 			"HAÏTI","RÉPUBLIQUE-DOMINICAINE","PORTO-RICO","TRINITÉ-ET-TOBAGO","BARBADE","SAINT-KITTS-ET-NEVIS","SAINTE-LUCIE","SAINT-VINCENT-ET-LES-GRENADINES",
 			"ANTIGUA-ET-BARBUDA","DOMINIQUE"];
-
+//liste de toutes les pays de l,amerique du nord
 var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' onclick = 'setAnswer()'> \
 			 <img src = 'images/Canada.png' id='CANADA' onclick = 'setAnswer()'> \
 			 <img src = 'images/Mexique.png' id='MEXIQUE' onclick = 'setAnswer()'> \
@@ -29,7 +29,7 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 		 	 <img src = 'images/St Lucie.png' id='SAINTE-LUCIE' onclick = 'setAnswer()'> \
 			 <img src = 'images/Dominique.png' id='DOMINIQUE' onclick = 'setAnswer()'> \
 			 </div>"
-
+//Le reste des listes ne sont pas fonctionnelle et sont a venire
 var ameriqueSudNoms = ["ARGENTINE","BOLIVIE","BRÉSIL","CHILI","COLOMBIE","ECUADOR","GUYANA","PARAGUAY","PEROU","SURINAME","URUGUAY","VENEZUELA"];
 var carteAmeriqueSud = "<img src = 'images/Argetine.png' id='ARGENTINE' onclick = 'setAnswer()'> \
 		       	<img src = 'images/Bolivie.png' id='BOLIVIE' onclick = 'setAnswer()'> \

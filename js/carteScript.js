@@ -225,7 +225,7 @@ function jouer() {
 
   lives(); 
   genere(); 
-  }
+}
 
 function devine() {
   var essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate

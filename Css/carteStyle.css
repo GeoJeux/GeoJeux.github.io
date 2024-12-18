@@ -1,0 +1,223 @@
+ /*CSS Barre de navigation*/
+  .topnav {
+    background-color:#6c8593;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    font-family: monospace;
+  }
+  .topnav a {
+    float: left;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #E14300;
+    color: white;
+  }
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+	
+  background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align:center;
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+}
+
+.carte{
+  width: 65%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color:#c0c0c0;
+  overflow:hidden;
+  padding: 10px;
+  border: solid, 5px, rgb(24, 114, 139);
+  border-radius: 5px;
+  display: block;
+}
+.image{
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  border-radius:10px;
+}
+
+.emptySpace{
+  height: 100px;
+  width: 100%;
+}
+
+.title{
+  width: 40%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  text-align: center;
+  color:white;
+  background-color:rgb(32 182 224);
+  overflow:hidden; 
+  padding: 10px; 
+  border: solid, 3px,  rgb(24, 114, 139);  
+  border-radius: 20px;
+}
+
+#jeux{
+  background-color:rgb(32 182 224);
+  width: 80%;
+  border-radius: 30px;
+  margin-right: auto ;
+  margin-left:auto;
+  text-align: center;
+  border: solid, 3px,  rgb(24, 114, 139); 
+}
+
+#vies{
+  text-align: right;
+  width:300px;
+  height:20px;
+  overflow: hidden;
+  float: right;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+#indice{
+  text-align: center;
+  width:10%;
+  margin-right:80%;
+  margin-left:10%;
+}
+
+#gameOver{
+  z-index: 1;
+  position: absolute ;
+  width: 74%;
+  height: 74%;
+  top:40%;
+  bottom:40%;
+  left:13%;
+  right:13%;
+  font-size:3em;
+  text-align: center;
+  border: solid, 5px, black;
+  background-color: rgb(24, 114, 139);
+  color: white;
+}
+.buttonContainer2 {
+  display: flex; 
+  justify-content: center; 
+  margin-inline: auto; 
+  padding: 10px;
+  width: 90%;
+  height: 220px;
+  border: solid, 3px,  rgb(24, 114, 139); 
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.buttonContainer1 {
+  display: flex; 
+  justify-content: center; 
+  margin-inline: auto; 
+  padding: 10px;
+  width: 90%;
+  height: 70px;
+  border: solid, 3px,  rgb(24, 114, 139); 
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.buttonMargin{
+  margin-inline: 25px;
+  width: 120px;
+  background-color: inherit;
+  border-radius: 10px;
+  border: solid, 2px,white;
+  color: white;
+  height:40px;
+}
+
+.coeur{
+  height:20px;
+}
+
+#score{
+  text-align: center;
+  width:200px;
+  height:20px;
+  overflow: hidden;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left:-20px;
+}
+
+.popup .show {
+  visibility: visible;
+}
+
+.buttonSelect1{
+  padding-top: 14px;
+  height:57.5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.buttonSelect2{
+  padding-top: 14px;
+  height:210px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#stop{
+  text-align: center;
+  float: left;
+  width:40px;
+  margin-left: 100px;
+  height: 40px;
+  margin-top:20px;
+}
+
+.imageCon{
+	height:150px;
+	width: 120px;
+	border-radius: 15px;
+}

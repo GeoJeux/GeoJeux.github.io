@@ -4,55 +4,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Jeux "Pointeur"</title>
-    <link href="Css/stylejeuxpointeur.css" rel="stylesheet" type="text/css" />
-
-  <style>
-
-
-
-    
-  </style>
-    
+    <title>Jeux Carte</title>
+    <link href="stylejeuxpointeur.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="js/scriptjeuxpointeur.js"></script>
+    <script src="scriptjeuxpointeur.js"></script>
 
      <div class="topnav">
         <a href="index.html">Accueil</a>
         <a href="carte.html">Devinette</a>
         <a class="active" href="jeuxpointeur.html">Carte</a>
         <a href="questionnaire.html">Capitale<a/>
-    </div>
-    
-    <div class="title">
-      <h1>Pointeur</h1>
-    </div>
+     </div>
+     <div class="title">
+       <h1>Carte</h1>
+     </div>
     <div class="emptySpace"></div>
-
     <div id="jeux">
       <div class="emptySpace"></div>
-      <h2 style="color:white">Instruction</h2>
-      <p style="color:white"> <i>Bonjour, bien venu au jeu pointeur!</i><br>Ce jeu va avoir une option de choisir un continent de ton choix.
-Quand vous commencez le jeu, tu dois trouver le pays sur la grille qui correspond au pays qui t'a été donné dans le continent que tu as choisi.<br> Pèse le boutton jouer pour commencer le jeux.
-
-</p>
+      <h2 style="color:white">Instructions</h2>
+      <p style="color:white;">Bonjour, bien venu au jeu pointeur!<br>- Sélectionner le continent que vous voulez<br>
+                              - Trouver le pays sur la carte qui correspond au pays qui t'a été donné<br>
+                              - Pèse le boutton jouer pour commencer le jeux</p>
       <div id = "btnChoixContinentDiv" class="emptySpace">
-        <button class = "btnChoixContinent" value = "ameriqueNord" onclick = "setContinent()">Amérique du Nord</button>
-        <button class = "btnChoixContinent" value = "ameriqueSud" onclick = "setContinent()">Amérique du Sud</button>
-        <button class = "btnChoixContinent" value = "afrique" onclick = "setContinent()">Afrique</button>
-        <button class = "btnChoixContinent" value = "europe" onclick = "setContinent()">Europe</button>
-        <button class = "btnChoixContinent" value = "asie" onclick = "setContinent()">Asie</button>
-        <button class = "btnChoixContinent" value = "oceanie" onclick = "setContinent()">Océanie</button>
+        <button class = "btnChoixContinent" value = "ameriqueNord" onclick = "setContinent()">Amérique du Nord</button> <br>
+        <p style="color: red;">Autres continents à venir!</p>
       </div>
-
       <input id = "btnjouer" type="button" value="Jouer" onclick="jouerPointeur()">
       <div class="emptySpace"></div>
     </div>
     <div class="emptySpace"></div>
-
-
   </body>
-
-
 </html>

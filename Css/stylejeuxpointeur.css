@@ -1,0 +1,297 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: url('https://images.photowall.com/products/43950/world-map-shade.jpg?h=699&q=85');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align:center;
+}
+
+.emptySpace{
+  height: 100px;
+  width: 100%;
+}
+
+.title{
+  width: 40%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  text-align: center;
+  color:white;
+  background-color:rgb(32 182 224);
+  overflow:hidden;
+  padding: 10px;
+  border: solid, 3px,  rgb(24, 114, 139);  
+  border-radius: 20px;
+}
+
+#jeux{
+  background-color:rgb(32 182 224);
+  color: white;
+  width: 80%;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid, 3px,  rgb(24, 114, 139);
+}
+#btnjouer {
+	font-size: 20px;
+	color: white;
+	background-color: inherit;
+	border: solid, 2px, white;
+	border-radius: 30px;
+	padding: 10px;
+}
+#btnjouer:hover {
+	background-color: rgb(24, 114, 139);
+}
+#btnChoixContinentDiv {
+	padding-top: 20px;
+}
+.grid-container {
+  position: relative;
+  width: 95%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  height: 800px;
+  border-radius: 30px;
+  border: solid, 1px, white;
+}
+
+img {
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent; 
+}
+img:hover {
+  transform: scale(1.2);
+}
+img:focus {
+	border: solid, 2px, rgb(32 182 224);
+}
+.btnChoixContinent {
+	color: white;
+	background-color: inherit;
+	border: solid, 2px, white;
+	border-radius: 15px;
+	padding: 5px;
+}
+.btnChoixContinent:hover {
+	background-color: rgb(24, 114, 139);
+}
+.btnChoixContinent:focus {
+	background-color: rgb(24, 114, 139);
+	border: solid, 10px, rgb(24, 114, 139);
+	border-radius: 60px;
+}
+
+#ÉTATS-UNIS {
+	position: absolute;
+	top: 245px;
+	left: 110px;  
+	height: 200px;
+	transition: transform 0.3s ease;
+}
+#CANADA {
+	position: absolute; 
+	left: 100px; 
+	height: 340px; 
+	transform: rotate(-8deg);
+	transition: transform 0.3s ease;
+}
+#CANADA:hover {
+	transform: rotate(-8deg) scale(1.2);
+}
+#MEXIQUE {
+	position: absolute; 
+	top: 390px; 
+	left: 115px; 
+	height: 155px;
+	transform: rotate(8deg);
+	transition: transform 0.3s ease;
+}
+#MEXIQUE:hover {
+	transform: rotate(8deg) scale(1.2);
+}
+#GUATEMALA {
+	position: absolute;
+	top: 525px;
+	left: 300px;
+	height: 45px;
+	transition: transform 0.3s ease;
+}
+#BELIZE {
+	position: absolute;
+	top: 520px;
+	left: 325px;
+	height: 28px;
+	transition: transform 0.3s ease;
+}
+#HONDURAS {
+	position: absolute;
+	top: 535px;
+	left: 335px;
+	height: 35px;
+	transition: transform 0.3s ease;
+}
+#EL-SALVADOR {
+	position: absolute;
+	top: 557px;
+	left: 323px;
+	height: 20px;
+	transition: transform 0.3s ease;
+}
+#NICARAGUA {
+	position: absolute;
+	top: 557px;
+	left: 345px;
+	height: 44px;
+	transition: transform 0.3s ease;
+}
+#COSTA-RICA {
+	position: absolute;
+	top: 590px;
+	left: 360px;
+	height: 32px;
+	transition: transform 0.3s ease;
+}
+#PANAMA {
+	position: absolute;
+	top: 615px;
+	left: 385px;
+	height: 40px;
+	transition: transform 0.3s ease;
+}
+#CUBA {
+	position: absolute;
+	top: 450px;
+	left: 365px;
+	height: 95px;
+	transition: transform 0.3s ease;
+}
+#BAHAMAS {
+	position: absolute;
+	top: 410px;
+	left: 375px;
+	height: 90px;
+	transition: transform 0.3s ease;
+}
+#carteCaraibes {
+	position: relative;
+	background: inherit;
+	border: solid, 3px, black;
+	height: 350px;
+	width: 45%;
+	margin-top: 400px;
+	margin-left: 50%;
+}
+#JAMAÏQUE {
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+#HAÏTI {
+	position: absolute;
+	top: 20px;
+	left: 110px;
+	height: 70px;
+	transition: transform 0.3s ease;
+}
+#RÉPUBLIQUE-DOMINICAINE {
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	height: 80px;
+	transition: transform 0.3s ease;
+}
+#PORTO-RICO {
+	position: absolute;
+	top: 70px;
+	left: 350px;
+	height: 20px;
+	transition: transform 0.3s ease;
+}
+#TRINITÉ-ET-TOBAGO {
+	position: absolute;
+	top: 250px;
+	right: 40px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+#BARBADE {
+	position: absolute;
+	top: 200px;
+	right: 10px;
+	height: 20px;
+	transition: transform 0.3s ease;
+}
+#SAINT-KITTS-ET-NEVIS {
+	position: absolute;
+	top: 90px;
+	right: 70px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+#SAINT-VINCENT-ET-LES-GRENADINES {
+	position: absolute;
+	top: 200px;
+	right: 40px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+#ANTIGUA-ET-BARBUDA {
+	position: absolute;
+	top: 80px;
+	right: 40px;
+	height: 35px;
+	transition: transform 0.3s ease;
+}
+#SAINTE-LUCIE {
+	position: absolute;
+	top: 160px;
+	right: 40px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+#DOMINIQUE {
+	position: absolute;
+	top: 120px;
+	right: 40px;
+	height: 30px;
+	transition: transform 0.3s ease;
+}
+
+
+/*CSS Barre de navigation*/
+  .topnav {
+    background-color:#6c8593;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    font-family: monospace;
+  }
+  .topnav a {
+    float: left;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #E14300;
+    color: white;
+  }

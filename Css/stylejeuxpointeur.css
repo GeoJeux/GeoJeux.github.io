@@ -73,9 +73,6 @@ img {
 img:hover {
   transform: scale(1.2);
 }
-img:focus {
-	border: solid, 2px, rgb(32 182 224);
-}
 .btnChoixContinent {
 	color: white;
 	background-color: inherit;

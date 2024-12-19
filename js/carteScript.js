@@ -190,13 +190,13 @@ var max; // Déclare une variable pour stocker le score maximum
 var typeJeux; // Déclare une variable pour stocker le type de jeu
 
 function genere() {
-  pays = Math.floor(Math.random() * tblPays.length); // Sélectionne un pays au hasard dans le tableau
+  pays = Math.floor(Math.random() * tblPays.length-1); // Sélectionne un pays au hasard dans le tableau
 
   // Vérifie si un continent a été sélectionné
   if (continent != null) { 
     // Continue à sélectionner un pays jusqu'à ce qu'il corresponde au continent selectionner
     while (tblPays[pays][2] != continent) { 
-      pays = Math.floor(Math.random() * tblPays.length); // Sélectionne un nouveau pays aléatoire
+      pays = Math.floor(Math.random() * tblPays.length-1); // Sélectionne un nouveau pays aléatoire
     }
   }
 

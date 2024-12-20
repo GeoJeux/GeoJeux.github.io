@@ -250,7 +250,7 @@ function verifieEssaie(){
     case (essaie.includes("[")):
           message = "Entrée un pays!";
           break;
-    case (essaie.includes("@")):
+    case (essaie.includes("Var")):
           message = "Entrée un pays!";
           break;
     default:

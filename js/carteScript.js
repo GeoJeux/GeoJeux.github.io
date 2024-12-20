@@ -234,6 +234,7 @@ function jouer() {
 function verifieEssaie(){
   essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate
 
+  //La fonction s'assure que l'essaie ne peut pas contenir du code qui pourait être ensuite efectuer
   switch(true){
     case (essaie.includes(" ")):
           message = "Entrée un pays!";

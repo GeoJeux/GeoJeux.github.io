@@ -188,6 +188,7 @@ var nbIndice; // Déclare une variable pour stocker nombre d'indices
 var score = 0; // Initialise le score à 0
 var max; // Déclare une variable pour stocker le score maximum
 var typeJeux; // Déclare une variable pour stocker le type de jeu
+var essaie;
 
 function genere() {
   pays = Math.floor(Math.random() * tblPays.length-1); // Sélectionne un pays au hasard dans le tableau
@@ -212,7 +213,7 @@ function jouer() {
     <div class='emptySpace'></div>\
     <div>\
       <input type='text' id='guess'>\
-      <input type='button' value='Deviner' id='devine' onclick='devine()'>\
+      <input type='button' value='Deviner' id='devine' onclick='verifieEssaie()'>\
       <div id='erreurs'></div>\
       <input type='button' value='Indice' id='indice' onmouseover='indice()' onmouseleave='popup'>\
       <div id='indice'  class='popup'><span class='popuptext' id='myPopup'></span></div>\
@@ -230,22 +231,45 @@ function jouer() {
   genere(); 
 }
 
-function devine() {
-  var essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate
+function verifieEssaie(){
+  essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate
+
+  switch(true){
+    case (essaie.includes(" ")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("<")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("(")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("/")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("[")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("@")):
+          message = "Entrée un pays!";
+          break;
+    default:
+      devine()
+      break;
+  }
   
-  // Vérifie si l'entrée n'est pas vide
-  if (essaie != " ") { 
-    if (essaie == tblPays[pays][0]) { // Vérifie si la réponse est correcte
-      message = "Bravo, vous avez réussit à deviner le bon pays"; // Message de succès
-      score += 500; // Ajoute 500 au score
-      
-      genere(); // Génère un nouveau pays
-    } else {
-      vies--; // Diminue le nombre de vies
-      message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>"; // Message d'erreur
-    }
+}
+
+function devine() {
+
+  if (essaie == tblPays[pays][0]) { // Vérifie si la réponse est correcte
+    message = "Bravo, vous avez réussit à deviner le bon pays"; // Message de succès
+    score += 500; // Ajoute 500 au score
+    
+    genere(); // Génère un nouveau pays
   } else {
-    message = "<br>Entrée un pays!<br>"; // Message si l'entrée est vide
+    vies--; // Diminue le nombre de vies
+    message = "<br>Non, ce n'est pas " + essaie + ". Réessaye<br>"; // Message d'erreur
   }
   
   lives(); // Met à jour l'affichage des vies

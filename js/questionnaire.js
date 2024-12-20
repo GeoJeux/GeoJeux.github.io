@@ -118,7 +118,7 @@ function verifieEssaie(){
 
   //La fonction s'assure que l'essaie ne peut pas contenir du code qui pourait être ensuite efectuer
   switch(true){
-    case (essaie.includes(" ")):
+    case (essaie == " "):
           message = "Entrée un pays!";
           break;
     case (essaie.includes("<")):

@@ -113,9 +113,40 @@ function jouer() {
     genere();
 }
 
+function verifieEssaie(){
+  essaie = document.getElementById("guess").value.toUpperCase().trim(" "); // Récupère la valeur saisie et la formate
+
+  //La fonction s'assure que l'essaie ne peut pas contenir du code qui pourait être ensuite efectuer
+  switch(true){
+    case (essaie.includes(" ")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("<")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("(")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("/")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("[")):
+          message = "Entrée un pays!";
+          break;
+    case (essaie.includes("Var")):
+          message = "Entrée un pays!";
+          break;
+    default:
+        devine()
+        break;
+  }
+
+  document.getElementById("erreurs").innerHTML = message; // Affiche le message d'erreur
+  var textBox = document.getElementById("guess"); // Sélectionne le champ de saisie
+  textBox.value = ""; // Réinitialise le champ de saisie
+}
+
 function devine() {
-    // Récupère la valeur saisie par l'utilisateur, en la mettant en majuscules et en supprimant les espaces
-    var essaie = document.getElementById("guess").value.toUpperCase().trim(" ");
     // Vérifie si la réponse est correcte
     if (essaie == tblPays[pays][1]) {
         // Message de succès si la réponse est correcte

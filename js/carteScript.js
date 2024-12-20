@@ -254,10 +254,13 @@ function verifieEssaie(){
           message = "Entrée un pays!";
           break;
     default:
-      devine()
-      break;
+        devine()
+        break;
   }
-  
+
+  document.getElementById("erreurs").innerHTML = message; // Affiche le message d'erreur
+  var textBox = document.getElementById("guess"); // Sélectionne le champ de saisie
+  textBox.value = ""; // Réinitialise le champ de saisie
 }
 
 function devine() {

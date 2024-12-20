@@ -18,7 +18,7 @@ var carteAmeriqueNord = "<img src = 'images/États-unis.png' id='ÉTATS-UNIS' on
 			 <img src = 'images/Bahamas.png' id='BAHAMAS' onclick = 'setAnswer()'> \
 			 <div id='carteCaraibes'> \
 			 <img src = 'images/Jamaique.png' id='JAMAÏQUE' onclick = 'setAnswer()'> \
-		 	 <img src = 'images/Haiti.png' id='HAÏTI' onclick = 'setAnswer()'> \
+		 	 <img src = 'images/Haïti.png' id='HAÏTI' onclick = 'setAnswer()'> \
 			 <img src = 'images/République Dominicaine.png' id='RÉPUBLIQUE-DOMINICAINE' onclick = 'setAnswer()'> \
 			 <img src = 'images/Porto Rico.png' id='PORTO-RICO' onclick = 'setAnswer()'> \
 			 <img src = 'images/Trinidad et Tobago.png' id='TRINITÉ-ET-TOBAGO' onclick = 'setAnswer()'> \

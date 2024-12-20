@@ -92,7 +92,7 @@ function jouer() {
       <div class='emptySpace'></div>\
       <div>\
         <input type='text' id='guess'>\
-        <input type='button' value='Deviner' id='devine' onclick='devine()'>\
+        <input type='button' value='Deviner' id='devine' onclick='verifieEssaie()'>\
         <div id='erreurs'></div>\
       </div>\
       <div class='emptySpace'></div>";

@@ -1,5 +1,5 @@
 
-/*Tableaux de tout les pays du monde avec leur superficie, image de leur drapeau et un image de leur silhouette*/
+/*Tableaux de tout les pays du monde avec leur superficie, image de leur drapeau et un image de leur silhouette. Ce tableau a été généré grace à ChatGPT et les images viennent de sources sans license avec droit d'utilisation gratuit.*/
 var tblPays = [
   ["AFGHANISTAN", "Kaboul", "Asie", 652230, "<img src='images/Afghanistan.png' class='image'>", "<img src='images/Drapeau/Afghanistand.png' class='image'>"],
   ["AFRIQUE DU SUD", "Pretoria", "Afrique", 1219090, "<img src='images/AfriqueDuSud.png' class='image'>", "<img src='images/Drapeau/AfriqueDuSudd.png' class='image'>"],
@@ -316,6 +316,8 @@ function lives() {
         score = score*1.2;
         break;
     }
+
+    //Cce code n'est pas le notre on pense que ça viendrait de w3school, mais on ne peux pas retrouver le lien exacte.
     popUp = document.createElement("div"); // Crée un nouvel élément pour le message de fin de jeu
     popUp.id = 'gameOver'; // Définit l'ID de l'élément
     popUp.innerHTML = "Game Over<br>Vous avez perdu<br>Votre score est de \n<h1>" + score + "</h1><input type='button' value='Rejouer' onclick='location.reload();'></a><a href='index.html'><input type='button' value='Quitter'<a>"; // Message de fin de jeu
@@ -348,6 +350,8 @@ function arrete() {
   lives(); // Met à jour l'affichage des vies
 }
 
+
+//Le code de la fonction a été copier de ce site https://www.w3schools.com/howto/howto_js_popup.asp.
 function popup() {
   var popup = document.getElementById("myPopup"); // Sélectionne l'élément popup
   popup.classList.toggle("show"); // Affiche ou masque le popup
